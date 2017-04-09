@@ -1,0 +1,95 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+    .menu {
+        li a {
+            padding: 0 15px;
+        }
+    }
+
+    .common-filter {
+        & > span {
+            font-size: 18px;
+            //margin-left: 120px;
+            margin-left: 0;
+            padding-top: 10px;
+        }
+    }
+
+}
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+        .menu {
+            li a {
+                letter-spacing: normal;
+                font-size: 14px;
+                padding: 0 10px;
+            }
+        }
+
+        .common-filter {
+            & > span {
+                font-size: 18px;
+            //margin-left: 95px;
+            margin-left: 0;
+            padding-top: 10px;
+        }
+    }
+
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            top: 45px;
+            left: 0;
+            right: 0;
+            li {
+                float: none;
+                background-color: $grey;
+                border-left: none;
+                border-bottom: 1px solid darken($grey, 5%);
+                a {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mob-menu-btn {
+            display: block;
+        }
+
+        .common-filter  {
+            width: 250px;
+            margin: 0 auto;
+            .nice-select {
+                float: none;
+            }
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+        .car-condition ul li:last-child {
+            margin-left: 7px;
+        }
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }

@@ -1,0 +1,307 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Auto</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Header -->
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                <div class="logo">
+                  <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-8 col-xs-12">
+                <div class="header-top-info">
+                  <div class="header-top-info-line-1">
+                    <a href="#">проверить продавца</a><span>|</span>
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a><span>|</span>
+                    <ul class="lang">
+                      <li class="active-yellow"><a  href="#">рус</a><span>|</span></li>
+                      <li><a href="#">укр</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="header-top-info-line-2">
+                   <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-user fa-stack-1x"></i>
+                    </span>
+                    вход
+                  </a>
+
+                  <a href="#">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-plus fa-stack-1x"></i>
+                    </span>
+                    продать авто
+                  </a>
+                </div>
+
+                <div class="header-top-info-line-3">
+                  <p>За сегодня: <span>1400</span></p>
+                  <p>Всего авто: <span>450000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom clearfix">
+        <div class="container">
+
+          <div class="menu-search">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+
+          <ul class="menu">
+            <li class="menu-active"><a href="#">главная</a></li>
+            <li><a href="#">расширенный поиск авто</a></li>
+            <li><a href="#">авторазборки</a></li>
+            <li><a href="#">сто</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">полезная информация</a></li>
+          </ul>
+          
+          <div class="mob-menu-btn">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Filter section -->
+    <section id="filter">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="car-condition clearfix">
+              <p>Я ищу:</p>
+              <ul>
+                <li>
+                  <input type="radio" id="new-car" name="car-condition" value="new-car" checked>
+                  <label for="new-car">б/у авто</label>
+                  <div class="check"></div>
+                </li>
+
+                <li>
+                  <input type="radio" id="used-car" name="car-condition" value="used-car">
+                  <label for="used-car">новое авто</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter transport-filter clearfix">
+              <span>Транспорт:</span>
+              <select name="transport-select" id="transport-select">
+                <option value="1">легковые 5</option>
+                <option value="2">грузовые 1</option>
+                <option value="3">грузовые 2</option>
+                <option value="4">грузовые 3</option>
+                <option value="5">грузовые 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter brand-filter clearfix">
+              <span>Марка:</span>
+              <select name="brand-select" id="brand-select">
+                <option data-display="марка">Выбор марки</option>
+                <option value="1">audi 5</option>
+                <option value="2">toyota 1</option>
+                <option value="3">nissan 2</option>
+                <option value="4">kia 3</option>
+                <option value="5">honda 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter model-filter clearfix">
+              <span>Модель:</span>
+              <select name="model-select" id="model-select">
+                <option data-display="модель">Выбор модели</option>
+                <option value="1">A5</option>
+                <option value="2">Corolla</option>
+                <option value="3">Accord</option>
+                <option value="4">Accord</option>
+                <option value="5">Golf</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter region-filter clearfix">
+              <span>Регион:</span>
+              <select name="region-select" id="region-select">
+                <option value="1">Киевская 5</option>
+                <option value="2">Киевская 1</option>
+                <option value="3">Киевская 2</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="5">Киевская 4</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter year-filter clearfix">
+              <span>Год:</span>
+              <div class="filter-group clearfix">
+                <div class="filter-group-item pull-left">
+                  <select name="year-from-select" id="year-from-select">
+                    <option data-display="от">от</option>
+                    <option value="1">2005</option>
+                    <option value="2">2008</option>
+                    <option value="3">2009</option>
+                    <option value="4">2012</option>
+                    <option value="4">2017</option>
+                  </select>
+                </div>
+
+                <div class="filter-group-item pull-right">
+                  <select name="year-to-select" id="year-to-select">
+                    <option data-display="до">до</option>
+                    <option value="1">2005</option>
+                    <option value="2">2008</option>
+                    <option value="3">2009</option>
+                    <option value="4">2012</option>
+                    <option value="4">2017</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter price-filter clearfix">
+              <span>Цена:</span>
+              <div class="filter-group clearfix">
+                <div class="filter-group-item pull-left">
+                  <input type="text" placeholder="от" value="">
+                  <input type="text" placeholder="до" value="">
+                </div>
+
+                <div class="filter-group-item pull-right">
+                  <select name="price-from-select" id="price-from-select">
+                    <option data-display="$">$</option>
+                    <option value="1">$</option>
+                    <option value="2">грн</option>
+                    <option value="2">руб</option>
+                  </select>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-2">
+            <div class="search-extend-btn">
+              <a href="#">Расширенный поиск</a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="search-btn">
+              <a href="#">Поиск</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End Filter section -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>-->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

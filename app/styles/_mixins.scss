@@ -1,0 +1,16 @@
+@mixin buttons ($btn-bg-color, $btn-bg-img, $btn-fz, $btn-height) {
+	display: inline-block;
+	background-color: $btn-bg-color;
+	background-image: url($btn-bg-img);
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: $btn-fz;
+	height: $btn-height;
+	line-height: $btn-height;
+	box-shadow: inset 0 0 0 0 $btn-bg-color;
+	transition: all ease 0.3s;
+}
+
+@mixin buttons-hover ($btn-bg-color, $btn-height) {
+	box-shadow: inset 0 $btn-height 0 0 $btn-bg-color;
+}

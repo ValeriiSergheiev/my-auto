@@ -1,0 +1,179 @@
+/* *** ГЛАВНАЯ *** */
+// Filter section
+#filter {
+	background-color: $green-light;
+	padding: 30px 0;
+}
+
+.car-condition {
+	margin-bottom: 25px;
+	p {
+		float: left;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	ul {
+		float: right;
+		li {
+			position: relative;
+			display: inline-block;
+			&:last-child {
+				margin-left: 20px;
+			}
+			input[type=radio] {
+				visibility: hidden;
+				position: absolute;
+				&:checked ~ .check {
+					background-image: url('../images/checked.png');
+				}
+				& ~ .check {
+					background-image: url('../images/unchecked.png');
+				}
+			}
+			label {
+				position: relative;
+				padding-left: 20px;
+				z-index: 10;
+				font-size: 20px;
+				font-weight: normal;
+				cursor: pointer;
+			}
+			.check {
+				position: absolute;
+				z-index: 5;
+				top: 6px;
+				left: 0;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+}
+
+//Select menu
+.nice-select {
+	border-radius: 0;
+	border: 1px solid $grey;
+	width: 250px;
+	background: linear-gradient(left, #fff 83%, $grey 17%);
+	padding-left: 10px;
+	padding-right: 50px;
+	span.current {
+		color: $text-grey-light;
+		font-size: 20px;
+	}
+	.list {
+		border-radius: 0;
+		border: 1px solid $grey;
+		margin-top: 0;
+		margin-left: -1px;
+		width: 250px;
+		max-height: 145px;
+		overflow-y: scroll;
+		box-shadow: none;
+		li {
+			color: $text-grey-light;
+			font-size: 20px;
+			padding-left: 10px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+	background-color: transparent;
+	color: $black;
+}
+
+.nice-select .option.selected {
+	font-weight: normal;
+}
+
+.nice-select:active, .nice-select.open, .nice-select:focus {
+	border: solid 1px $grey;
+	box-shadow: none;
+}
+
+.nice-select .option {
+	line-height: 35px;
+	min-height: 35px;
+}
+
+.nice-select::after {
+	right: 18px;
+	top: 57%;
+}
+//End Select menu
+.common-filter {
+	margin-bottom: 25px;
+	& > span {
+		display: inline-block;
+		font-size: 20px;
+		padding-top: 7px;
+	}
+	.nice-select {
+		float: right;
+	}
+}
+
+.region-filter {
+	& > span {
+		margin-left: 27px;
+	}
+}
+
+.year-filter {
+	& > span {
+		margin-left: 27px;
+	}
+}
+
+.price-filter {
+	& > span {
+		margin-left: 23px;
+	}
+}
+
+.brand-filter, .year-filter, .model-filter, .price-filter {
+	.list {
+		li:first-child {
+			display: none;
+		}
+	}
+}
+
+.filter-group {
+	width: 250px;
+	float: right;
+}
+
+.filter-group-item {
+	.nice-select {
+		width: 105px;
+		background: linear-gradient(left, #fff 58%, $grey 42%);
+		.list {
+			width: 105px;
+		}
+	}
+}
+
+.price-filter {
+	.filter-group-item {
+		& > input {
+			width: 60px;
+			height: 42px;
+			font-size: 12px;
+			padding: 0 10px;
+			color: $text-grey-light;
+			border: 1px solid $grey;
+			&:first-child {
+				margin-right: 10px;
+			}
+			&::placeholder {
+				color: $text-grey-light;
+				opacity: 1;
+				font-size: 20px;
+			}
+		}
+	}
+}

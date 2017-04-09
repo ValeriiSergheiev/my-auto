@@ -1,0 +1,144 @@
+.header-top {
+	padding: 5px 0;
+}
+
+.header-top-info {
+	float: right;
+	color: $text-grey;
+}
+
+.header-top-info-line-1 {
+	a {
+		display: inline-block;
+		font-size: 14px;
+		text-transform: uppercase;
+		&:hover {
+			color: $yellow;
+		}
+		i {
+			color: $grey;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+	span {
+		font-size: 1.4em;
+		margin: 0 10px;
+		color: $black;
+	}
+}
+
+.lang {
+	display: inline-block;
+	li {
+		display: inline-block;
+	}
+}
+
+.header-top-info-line-2 {
+	margin: 8px 0;
+	@include clearfix;
+	a:last-child {
+		float: right;
+		@include buttons($yellow, '', 16px, 35px);
+		text-transform: uppercase;
+		padding: 0 20px;
+		span {
+			font-size: 13px;
+		}
+		&:hover {
+			@include buttons-hover($green, 35px);
+		}
+	}
+	a:first-child {
+		float: right;
+		display: inline-block;
+		margin-left: 15px;
+		text-transform: uppercase;
+		font-size: 16px;
+		height: 35px;
+		line-height: 35px;
+		transition: all ease 0.3s;
+		&:hover {
+			color: $yellow;
+		}
+		span {
+			font-size: 13px;
+		}
+	}
+}
+
+.header-top-info-line-3 {
+	@include clearfix;
+	p {
+		font-size: 15px;
+		letter-spacing: .02em;
+		span {
+			font-weight: bold;
+			color: $black;
+		}
+		&:first-child {
+			float: right;
+			margin-left: 13px;
+		}
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+/* Header bottom */
+.header-bottom {
+	position: relative;
+	background-color: $green;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: middle;
+}
+
+.menu-search {
+	a {
+		color: #fff;
+		font-size: 21px;
+		float: left;
+		margin-right: 10px;
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
+
+.menu {
+	@include clearfix();
+	li {
+		display: block;
+		float: left;
+		border-left: 1px solid darken($green, 5%);
+		&:first-child {
+			border-left: none;
+		}
+		a {
+			display: block;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: .02em;
+			text-transform: uppercase;
+			padding: 0 35px;
+			transition: all ease 0.15s;
+			&:hover {
+				background-color: $yellow;
+			}
+		}
+	}
+}
+
+.mob-menu-btn {
+	display: none;
+	float: right;
+	.hamburger {
+		padding: 0;
+		color: #fff;
+		margin-top: 10px;
+	}
+}
