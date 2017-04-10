@@ -56,7 +56,7 @@ gulp.task('lint:test', () => {
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
+    /*.pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
     .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
       collapseWhitespace: true,
@@ -67,7 +67,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
       removeEmptyAttributes: true,
       removeScriptTypeAttributes: true,
       removeStyleLinkTypeAttributes: true
-    })))
+    })))*/
     .pipe(gulp.dest('dist'));
 });
 
@@ -123,6 +123,7 @@ gulp.task('serve', () => {
 gulp.task('serve:dist', ['default'], () => {
   browserSync.init({
     notify: false,
+    tunnel: true,
     port: 9000,
     server: {
       baseDir: ['dist']
@@ -175,4 +176,16 @@ gulp.task('default', () => {
     dev = false;
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
+});
+
+//Sprites
+var spritesmith = require('gulp.spritesmith');
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('app/images/sprites/*.png').pipe(spritesmith({
+    imgName: '../images/sprite.png',
+    cssName: '_sprite.scss'
+  }));
+  spriteData.img.pipe(gulp.dest('app/images/'));
+  spriteData.css.pipe(gulp.dest('app/styles/'));
 });

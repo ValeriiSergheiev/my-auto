@@ -55,7 +55,7 @@
 	border-radius: 0;
 	border: 1px solid $grey;
 	width: 250px;
-	background: linear-gradient(left, #fff 83%, $grey 17%);
+	background: linear-gradient(to right, #fff 83%, $grey 17%);
 	padding-left: 10px;
 	padding-right: 50px;
 	span.current {
@@ -69,7 +69,7 @@
 		margin-left: -1px;
 		width: 250px;
 		max-height: 145px;
-		overflow-y: scroll;
+		overflow-y: auto;
 		box-shadow: none;
 		li {
 			color: $text-grey-light;
@@ -150,7 +150,7 @@
 .filter-group-item {
 	.nice-select {
 		width: 105px;
-		background: linear-gradient(left, #fff 58%, $grey 42%);
+		background: linear-gradient(to right, #fff 58%, $grey 42%);
 		.list {
 			width: 105px;
 		}
@@ -175,5 +175,176 @@
 				font-size: 20px;
 			}
 		}
+	}
+}
+
+.filter-search-row {
+	margin-top: 30px;
+}
+
+.search-extend-btn {
+	text-align: right;
+	margin-top: 7px;
+	a {
+		display: inline-block;
+		position: relative;
+		font-size: 18px;
+		color: $text-grey-light;
+		letter-spacing: .02em;
+		border-bottom: 1px dashed $text-grey-light;
+		transition: $transition;
+		&:hover {
+			color: $yellow;
+			border-color: $yellow;
+		}
+		&::before {
+			@extend .before;
+			content: '\f1db';
+			font-family: FontAwesome;
+			font-size: 21px;
+			top: -4px;
+			left: -25px;
+		}
+		&::after {
+			@extend .after;
+			content: '\f067';
+			font-family: FontAwesome;
+			font-size: 10px;
+			top: 3px;
+			left: -20px;
+		}
+	}
+}
+
+.search-btn {
+	a {
+		@include buttons ($yellow, '', 20px, 40px);
+		padding: 0 35px;
+		&:hover {
+			@include buttons-hover ($green, 40px);
+		}
+	}
+}
+
+//Section Most recent advert
+.advert {
+	display: block;
+	border: 1px solid $grey;
+	max-width: 250px;
+	margin-bottom: 45px;
+	transition: $transition;
+	&:hover {
+		box-shadow: 2px 2px 5px $grey;
+	}
+	&:hover .advert-photo img {
+		transform: scale(1.2);
+	}
+}
+
+.advert-photo {
+	max-height: 200px;
+	border-bottom: 1px solid $grey;
+	overflow: hidden;
+	img {
+		transition: $transition;
+	}
+}
+
+.advert-info {
+	padding: 0 10px;
+	h6 {
+		font-weight: bold;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	h5 {
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+		margin: 15px 0;
+		span {
+			color: $green;
+		}
+	}
+}
+
+.characteristic {
+	margin-top: 6px;
+	li {
+		display: block;
+		float: left;
+		//width: 33.3%;
+		font-size: 14px;
+		color: $text-grey;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+		i {
+			margin-right: 5px;
+			vertical-align: top;
+		}
+	}
+}
+
+.geo {
+	@extend .characteristic;
+}
+
+.tel {
+	@extend .characteristic;
+	li:first-child {
+		margin-right: 40px;
+		font-weight: bold;
+	}
+	li:last-child {
+		color: $text-grey-light;
+	}
+}
+
+.show-more-btn {
+	text-align: center;
+	a {
+		@include buttons ($yellow, '', 20px, 40px);
+		padding: 0 15px;
+		&:hover {
+			@include buttons-hover ($green, 40px);
+		}
+	}
+}
+
+//Section Advantages
+#advantages {
+	background-color: #f6f6f6;
+	box-shadow: inset 0 3px 10px -10px $grey;
+}
+
+.advantages-item {
+	padding: 40px 20px 0;
+	background-color: #fff;
+	text-align: center;
+	max-width: 300px;
+	min-height: 300px;
+	margin-bottom: 25px;
+	transition: $transition;
+	cursor: default;
+	h4 {
+		font-size: 20px;
+		letter-spacing: .02em;
+		text-transform: uppercase;
+	}
+	img {
+		margin: 20px 0;
+	}
+	p {
+		font-size: 18px;
+		color: $text-grey;
+		letter-spacing: .02em;
+	}
+	&:hover {
+		//transform: translate(10px,5px);
+		transform:skew(2deg, 1deg);
 	}
 }
