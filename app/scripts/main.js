@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	new WOW().init();
+
 	//Remove hover on touch devices
 	var touch = 'ontouchstart' in document.documentElement
 	|| navigator.maxTouchPoints > 0
@@ -51,6 +53,20 @@ if (touch) { // remove all :hover stylesheets
 
 	//Select menu
 	$('.common-filter select').niceSelect();
+
+	//ScrollTop button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
 
 
 });

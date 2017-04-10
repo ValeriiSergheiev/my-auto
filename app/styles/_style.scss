@@ -234,7 +234,7 @@
 	margin-bottom: 45px;
 	transition: $transition;
 	&:hover {
-		box-shadow: 2px 2px 5px $grey;
+		box-shadow: $shadow;
 	}
 	&:hover .advert-photo img {
 		transform: scale(1.2);
@@ -346,5 +346,91 @@
 	&:hover {
 		//transform: translate(10px,5px);
 		transform:skew(2deg, 1deg);
+	}
+}
+
+//Autonews Section
+#autonews {
+	background-image: url('../images/autonews_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.section-title h2 {
+		color: #fff;
+	}
+}
+
+.details-item {
+	display: block;
+	text-align: center;
+	height: 300px;
+	width: 250px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.details-item-photo {
+	height: 50%;
+	overflow: hidden;
+}
+
+.details-item-info {
+	padding: 0 15px;
+	background-color: #fff;
+	height: 50%;
+	h5 {
+		font-size: 16px;
+		letter-spacing: .02em;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+	p {
+		font-size: 14px;
+		letter-spacing: .02em;
+		color: $text-grey;
+		line-height: 1;
+		margin-top: 7px;
+	}
+	span {
+		@include buttons ($green, '', 16px, 28px);
+		text-transform: uppercase;
+		font-weight: normal;
+		padding: 0 20px;
+		position: absolute;
+		bottom: 12px;
+		left: 40px;
+		right: 40px;
+		&:hover {
+			@include buttons-hover ($yellow, 28px);
+		}
+	}
+}
+
+//Helpful information Section
+#helpful-info {
+	a.details-item:hover {
+		border-color: $yellow;
+	}
+}
+
+//ScrollTop button
+.scrollToTop{
+	width:70px; 
+	height:70px;
+	padding:10px; 
+	text-align:center; 
+	background: $green;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1;
+	display: none;
+	&:hover, &:focus {
+		color: #fff;
+	}
+	span {
+		font-size: 32px;
 	}
 }

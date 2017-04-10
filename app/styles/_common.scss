@@ -63,6 +63,17 @@ select, button {
 	padding: 45px 0;
 }
 
+.item-shadow {
+	transition: $transition;
+	&:hover {
+		box-shadow: $shadow;
+	}
+}
+
+.item-border {
+	border: $border;
+}
+
 .section-title {
 	text-align: center;
 	margin-bottom: 35px;
@@ -125,5 +136,20 @@ select, button {
 }
 .icon-tel {
 	@include sprite($tel);
+}
+.icon-fb {
+	@include sprite($fb);
+}
+.icon-vk {
+	@include sprite($vk);
+}
+.icon-yt {
+	@include sprite($yt);
+}
+.icon-inst {
+	@include sprite($inst);
+}
+.icon-tw {
+	@include sprite($tw);
 }
 //End Sprites
