@@ -132,6 +132,12 @@
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 
+        .logo {
+            img {
+                max-width: 150%;
+            }
+        }
+
         .car-condition ul li:last-child {
             margin-left: 7px;
         }
@@ -166,10 +172,11 @@
         }
 
         .header-top-info-line-1 {
-            & > a {
+            text-align: right;
+            & > a:first-child {
                 display: none;
             }
-            & > span {
+            & > span:nth-child(2) {
                 display: none;
             }
         }
