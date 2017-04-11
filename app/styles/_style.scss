@@ -55,7 +55,11 @@
 	border-radius: 0;
 	border: 1px solid $grey;
 	width: 250px;
-	background: linear-gradient(to right, #fff 83%, $grey 17%);
+	//background: linear-gradient(to right, #fff 83%, $grey 17%);
+	background-image: url('../images/select-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
 	padding-left: 10px;
 	padding-right: 50px;
 	span.current {
@@ -76,6 +80,9 @@
 			font-size: 20px;
 			padding-left: 10px;
 			padding-right: 20px;
+			&:first-child {
+				display: none;
+			}
 		}
 	}
 }
@@ -100,7 +107,7 @@
 }
 
 .nice-select::after {
-	right: 18px;
+	right: 16px;
 	top: 57%;
 }
 //End Select menu
@@ -134,13 +141,13 @@
 	}
 }
 
-.brand-filter, .year-filter, .model-filter, .price-filter {
+/*.brand-filter, .year-filter, .model-filter, .price-filter {
 	.list {
 		li:first-child {
 			display: none;
 		}
 	}
-}
+}*/
 
 .filter-group {
 	width: 250px;
@@ -433,4 +440,123 @@
 	span {
 		font-size: 32px;
 	}
+}
+
+/* *** Страница КАТАЛОГ ****/
+//Offcanvas
+.navbar-offcanvas {
+	background-color: #fff;
+	padding-top: 15px;
+	z-index: 10;
+}
+//End Offcanvas
+
+.offcanvas-close {
+	display: none;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: $text-grey-light;
+	i {
+		margin-right: 7px;
+	}
+}
+
+.refine-search-btn {
+	text-align: center;
+	a {
+		@include buttons ($green, '', 18px, 40px);
+		font-weight: normal;
+		width: 135px;
+	}
+}
+
+.refine-filter-btn {
+	text-align: center;
+	a {
+		@include buttons ($green, '', 18px, 40px);
+		font-weight: normal;
+		width: 135px;
+	}
+}
+
+//Catalog Sidebar
+#sidebar-parameters {
+	position: relative;
+}
+
+.sidebar-refine-parameters-form {
+	h5 {
+		text-transform: uppercase;
+		font-size: 18px;
+		text-align: center;
+		font-weight: bold;
+		padding: 10px 0;
+		background-color: lighten($grey, 17%);
+	}
+}
+
+.parameters-collapse {
+	border-top: none;
+	& > a {
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		color: $text-grey;
+		position: relative;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 10px 0;
+		span {
+			position: absolute;
+			right: 7px;
+			top: 50%;
+		}
+	}
+}
+
+.filter-open {
+	color: $green !important;
+	& > span {
+		transform: rotate(180deg);
+	}
+	& + div.catalog-filter {
+		display: block;
+	}
+}
+
+.catalog-filter {
+	//margin-bottom: 10px;
+	padding: 0 15px;
+	display: none;
+	.nice-select {
+		width: 100%;
+		height: 25px;
+		line-height: 25px;
+		margin-bottom: 10px;
+		float: none;
+		&::after {
+			right: 7px;
+		}
+		span.current {
+			font-size: 15px;
+		}
+		.list {
+			width: calc(100% + 2px);
+			li {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.navbar-layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $green;
+	opacity: .8;
+	z-index: 5;
 }

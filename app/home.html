@@ -1,0 +1,901 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Auto</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Header -->
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-xs-4">
+                <div class="logo">
+                  <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-8 col-xs-8">
+                <div class="header-top-info">
+                  <div class="header-top-info-line-1 clearfix">
+                    <a href="#">проверить продавца</a><span>|</span>
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a><span>|</span>
+                    <ul class="lang">
+                      <li class="active-yellow"><a  href="#">рус</a><span>|</span></li>
+                      <li><a href="#">укр</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="header-top-info-line-2">
+                   <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-user fa-stack-1x"></i>
+                    </span>
+                    вход
+                  </a>
+
+                  <a href="#">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-plus fa-stack-1x"></i>
+                    </span>
+                    продать авто
+                  </a>
+                </div>
+
+                <div class="header-top-info-line-3">
+                  <p>За сегодня: <span>1400</span></p>
+                  <p>Всего авто: <span>450000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom clearfix">
+        <div class="container">
+
+          <div class="menu-search">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+
+          <ul class="menu">
+            <li class="menu-active"><a href="#">главная</a></li>
+            <li><a href="#">расширенный поиск авто</a></li>
+            <li><a href="#">авторазборки</a></li>
+            <li><a href="#">сто</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">полезная информация</a></li>
+          </ul>
+          
+          <div class="mob-menu-btn">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Filter section -->
+    <section id="filter">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="car-condition clearfix">
+              <p>Я ищу:</p>
+              <ul>
+                <li>
+                  <input type="radio" id="new-car" name="car-condition" value="new-car" checked>
+                  <label for="new-car">б/у авто</label>
+                  <div class="check"></div>
+                </li>
+
+                <li>
+                  <input type="radio" id="used-car" name="car-condition" value="used-car">
+                  <label for="used-car">новое авто</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter transport-filter clearfix">
+              <span>Транспорт:</span>
+              <select name="transport-select" id="transport-select">
+                <option value="1">легковые 5</option>
+                <option value="2">грузовые 1</option>
+                <option value="3">грузовые 2</option>
+                <option value="4">грузовые 3</option>
+                <option value="5">грузовые 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter brand-filter clearfix">
+              <span>Марка:</span>
+              <select name="brand-select" id="brand-select">
+                <option data-display="марка">Выбор марки</option>
+                <option value="1">audi 5</option>
+                <option value="2">toyota 1</option>
+                <option value="3">nissan 2</option>
+                <option value="4">kia 3</option>
+                <option value="5">honda 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter model-filter clearfix">
+              <span>Модель:</span>
+              <select name="model-select" id="model-select">
+                <option data-display="модель">Выбор модели</option>
+                <option value="1">A5</option>
+                <option value="2">Corolla</option>
+                <option value="3">Accord</option>
+                <option value="4">Accord</option>
+                <option value="5">Golf</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter region-filter clearfix">
+              <span>Регион:</span>
+              <select name="region-select" id="region-select">
+                <option value="1">Киевская 5</option>
+                <option value="2">Киевская 1</option>
+                <option value="3">Киевская 2</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="4">Запорожье</option>
+                <option value="5">Киевская 4</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="common-filter year-filter clearfix">
+              <span>Год:</span>
+              <div class="filter-group clearfix">
+                <div class="filter-group-item pull-left">
+                  <select name="year-from-select" id="year-from-select">
+                    <option data-display="от">от</option>
+                    <option value="1">2005</option>
+                    <option value="2">2008</option>
+                    <option value="3">2009</option>
+                    <option value="4">2012</option>
+                    <option value="4">2017</option>
+                  </select>
+                </div>
+
+                <div class="filter-group-item pull-right">
+                  <select name="year-to-select" id="year-to-select">
+                    <option data-display="до">до</option>
+                    <option value="1">2005</option>
+                    <option value="2">2008</option>
+                    <option value="3">2009</option>
+                    <option value="4">2012</option>
+                    <option value="4">2017</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+            <div class="common-filter price-filter clearfix">
+              <span>Цена:</span>
+              <div class="filter-group clearfix">
+                <div class="filter-group-item pull-left">
+                  <input type="text" placeholder="от" value="">
+                  <input type="text" placeholder="до" value="">
+                </div>
+
+                <div class="filter-group-item pull-right">
+                  <select name="price-from-select" id="price-from-select">
+                    <option data-display="$">$</option>
+                    <option value="1">$</option>
+                    <option value="2">грн</option>
+                    <option value="2">руб</option>
+                  </select>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="filter-search-row">
+
+            <div class="col-sm-4 col-sm-offset-2">
+              <div class="search-extend-btn">
+                <a href="#">Расширенный поиск</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="search-btn">
+                <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  Поиск
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End Filter section -->
+
+    <!-- Section Most recent advert -->
+    <section id="recent-ad" class="section-padding">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="lines-left"></span>
+          <h2>самые свежие объявления</h2>
+          <span class="lines-right"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="advert center-block clearfix">
+              <div class="advert-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="advert-details">
+                <h6>Daewoo Sens 2005</h6>
+                <ul class="characteristic clearfix">
+                  <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+                  <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+                  <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+                </ul>
+                <ul class="geo clearfix">
+                  <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+                </ul>
+                <ul class="tel clearfix">
+                  <li><i class="icon icon-tel" title="Телефон"></i>096 000 00 00</li>
+                  <li>12 07 2017г</li>
+                </ul>
+                <h5><span>000.00 $</span> / 000.00 грн</h5>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="show-more-btn">
+          <a href="#">Смотреть ещё</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Section Most recent advert -->
+
+    <!-- Section Advantages -->
+    <section id="advantages" class="section-padding">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="lines-left"></span>
+          <h2>почему мы лучше других порталов по продаже авто</h2>
+          <span class="lines-right"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="150">
+              <h4>быстро и удобно</h4>
+              <img src="images/advantages_1.png" alt="image">
+              <p>Очень быстрый и<br>удобный поиск авто</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".1s" data-wow-offset="100">
+              <h4>абсолютно бесплатно</h4>
+              <img src="images/advantages_2.png" alt="image">
+              <p>Добавление объявлений<br>в неограниченном<br>количестве</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".2s" data-wow-offset="100">
+              <h4>продажа в 2 клика</h4>
+              <img src="images/advantages_3.png" alt="image">
+              <p>Продажа авто<br>в 2 клика</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="100">
+              <h4>прозрачность сделки</h4>
+              <img src="images/advantages_4.png" alt="image">
+              <p>Возможность проверки<br>продавца на наличие<br>жалоб</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".1s" data-wow-offset="100">
+              <h4>подписка на объявления</h4>
+              <img src="images/advantages_5.png" alt="image">
+              <p>Подписка на новые<br>объявления о продаже<br>авто</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="advantages-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".2s" data-wow-offset="100">
+              <h4>сто и авторазборки</h4>
+              <img src="images/advantages_6.png" alt="image">
+              <p>Огромный выбор и<br>удобный поиск СТО и<br>Авторазборок</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Section Advantages -->
+
+    <!-- Autonews Section -->
+    <section id="autonews" class="section-padding">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="lines-left"></span>
+          <h2>новости в автомобильном мире</h2>
+          <span class="lines-right"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="100">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".1s" data-wow-offset="100">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".2s" data-wow-offset="100">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block wow zoomInUp" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="100">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+          
+        </div>    
+
+        <div class="show-more-btn">
+          <a href="#">Смотреть ещё</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Autonews Section -->
+
+    <!-- Helpful information Section -->
+    <section id="helpful-info" class="section-padding">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="lines-left"></span>
+          <h2>полезная информация</h2>
+          <span class="lines-right"></span>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block item-border wow zoomInUp" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="150">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block item-border wow zoomInUp" data-wow-duration="1s" data-wow-delay=".1s" data-wow-offset="150">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block item-border wow zoomInUp" data-wow-duration="1s" data-wow-delay=".2s" data-wow-offset="150">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="#" class="details-item center-block item-border wow zoomInUp" data-wow-duration="1s" data-wow-delay=".3s" data-wow-offset="150">
+              <div class="details-item-photo">
+                <img src="images/cars/daewoo_sens.jpg" class="img-responsive" alt="image">
+              </div>
+              <div class="details-item-info">
+                <h5>название новости</h5>
+                <p>краткое описание краткое описаниекраткое описани екраткое описаниераткое описание краткое</p>
+                <span>подробнее</span>
+              </div>
+            </a>
+          </div>
+
+        </div>    
+        
+        <div class="show-more-btn">
+          <a href="#">Смотреть ещё</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Helpful information Section -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-3">
+            <ul class="footer-nav">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Расширенный поиск авто</a></li>
+              <li><a href="#">Авторазборки</a></li>
+              <li><a href="#">СТО</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Проверить продавца</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <ul class="footer-nav">
+              <li><a href="#">Полезная информация</a></li>
+              <li><a href="#">Помощь по сайту</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Поиск авто по марке и модели</a></li>
+              <li><a href="#">Поиск авто по области и городу</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <div class="hotline">
+              <p>Телефон горячей линии</p>
+              <p>0634462061</p>
+              <div class="sell-auto">
+                <a href="#">
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-plus fa-stack-1x"></i>
+                  </span>
+                  продать авто
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <ul class="socials">
+              <li><a href="#"><i class="icon icon-fb"></i></a></li>
+              <li><a href="#"><i class="icon icon-yt"></i></a></li>
+              <li><a href="#"><i class="icon icon-vk"></i></a></li>
+              <li><a href="#"><i class="icon icon-inst"></i></a></li>
+              <li><a href="#"><i class="icon icon-tw"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-xs-12">
+            <div class="footer-logo">
+              <a href="#"><img src="images/footer_logo.png" alt="logo"></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="copyright clearfix">
+          <p>&#169; 2017 Все права защищены</p>
+          <a href="#"><p>Разработка сайта Creative agency Astudio</p></a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- ScrollTop button -->
+    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>наверх</a>
+    <!-- End ScrollTop button -->
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="/bower_components/wow/dist/wow.js"></script>
+    <script src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>-->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

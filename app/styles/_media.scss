@@ -43,6 +43,7 @@
         display: none;
     }
 
+
 }
 
     /* Small Devices, Tablets */
@@ -124,6 +125,10 @@
 
         .advert-details {
             float: right;
+        }
+
+        .offcanvas-close {
+            display: inline-block;
         }
 
         
