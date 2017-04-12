@@ -177,4 +177,7 @@ select, button {
 .icon-arrow-right {
 	@include sprite($arrow-right);
 }
+.icon-photo {
+	@include sprite($photo);
+}
 //End Sprites

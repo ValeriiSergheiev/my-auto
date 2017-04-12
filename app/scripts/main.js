@@ -43,11 +43,13 @@ if (touch) { // remove all :hover stylesheets
 		if ($(window).width() > 768) {
 			$('.menu').show();
 			$('.mob-menu-btn').hide();
+			$('.search-result').show();
 		} 
 		else {
 			$('.menu').hide();
 			$('.mob-menu-btn').show();
 			$('.mob-menu-btn button').removeClass('is-active');
+			$('.search-result').hide();
 		};
 	});
 
@@ -88,6 +90,12 @@ if (touch) { // remove all :hover stylesheets
 
 	$('.navbar-offcanvas').on('hidden.bs.offcanvas', function () {
 		$('.navbar-layer').fadeOut('15ms');
+	});
+
+	//Filter button
+	$('.refine-filter-btn a').click(function(event) {
+		event.preventDefault();
+		$('.search-result').slideToggle('fast');
 	});
 
 	//Catalog accordion

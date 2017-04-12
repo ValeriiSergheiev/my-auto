@@ -22,6 +22,14 @@
         }
     }
 
+    .search-result {
+        & > li {
+            float: none !important;
+            width: auto;
+            display: block;
+        }
+    }
+
 
 }
 
@@ -173,6 +181,21 @@
 
         .navbar-offcanvas {
             padding-top: 15px;
+        }
+
+        .search-result {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .search-result-box h5 {
+            margin-bottom: 0;
+        }
+
+        .search-result-title h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
         }
 
 

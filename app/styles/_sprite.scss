@@ -108,6 +108,17 @@ $odo-total-width: 105px;
 $odo-total-height: 94px;
 $odo-image: '../images/sprite.png';
 $odo: (18px, 60px, -18px, -60px, 18px, 15px, 105px, 94px, '../images/sprite.png', 'odo', );
+$photo-name: 'photo';
+$photo-x: 90px;
+$photo-y: 52px;
+$photo-offset-x: -90px;
+$photo-offset-y: -52px;
+$photo-width: 15px;
+$photo-height: 13px;
+$photo-total-width: 105px;
+$photo-total-height: 94px;
+$photo-image: '../images/sprite.png';
+$photo: (90px, 52px, -90px, -52px, 15px, 13px, 105px, 94px, '../images/sprite.png', 'photo', );
 $tel-name: 'tel';
 $tel-x: 90px;
 $tel-y: 38px;
@@ -166,7 +177,7 @@ $yt: (0px, 0px, 0px, 0px, 30px, 30px, 105px, 94px, '../images/sprite.png', 'yt',
 $spritesheet-width: 105px;
 $spritesheet-height: 94px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($arrow-right, $exchange, $fb, $fuel, $geo, $inst, $money, $motor, $odo, $tel, $timer, $tw, $vk, $yt, );
+$spritesheet-sprites: ($arrow-right, $exchange, $fb, $fuel, $geo, $inst, $money, $motor, $odo, $photo, $tel, $timer, $tw, $vk, $yt, );
 $spritesheet: (105px, 94px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
