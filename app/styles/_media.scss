@@ -16,6 +16,12 @@
         }
     }
 
+    .auction {
+        li {
+            margin-right: 20px;
+        }
+    }
+
 
 }
 
@@ -41,6 +47,36 @@
 
     .lines-left, .lines-right {
         display: none;
+    }
+
+    .advert-catalog {
+        .advert-photo {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .advert-details {
+            float: none;
+            width: 100%;
+            h5 {
+                span:last-child {
+                    display: none;
+                }
+            }
+            p {
+                width: 100%;
+            }
+        }
+        .characteristic {
+            li:last-child {
+                float: left;
+            }
+        }
+    }
+
+    .auction {
+        li {
+            margin-bottom: 10px;
+        }
     }
 
 
@@ -131,7 +167,15 @@
             display: inline-block;
         }
 
-        
+        .timer {
+            display: none;
+        }
+
+        .navbar-offcanvas {
+            padding-top: 15px;
+        }
+
+
     }
 
     /* Extra Small Devices, Phones */ 

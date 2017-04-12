@@ -52,7 +52,7 @@ if (touch) { // remove all :hover stylesheets
 	});
 
 	//Select menu
-	$('.common-filter select, .catalog-filter select').niceSelect();
+	$('.common-filter select, .catalog-filter select, .sort-by-price').niceSelect();
 
 	//ScrollTop button
 	$(window).scroll(function(){

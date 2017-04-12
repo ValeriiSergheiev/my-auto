@@ -165,4 +165,16 @@ select, button {
 .icon-tw {
 	@include sprite($tw);
 }
+.icon-exchange {
+	@include sprite($exchange);
+}
+.icon-money {
+	@include sprite($money);
+}
+.icon-timer {
+	@include sprite($timer);
+}
+.icon-arrow-right {
+	@include sprite($arrow-right);
+}
 //End Sprites
