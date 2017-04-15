@@ -186,18 +186,19 @@
         .search-result {
             display: none;
             margin-top: 10px;
+            & > li {
+                font-size: 14px;
+            }
         }
 
-        .search-result-box h5 {
-            margin-bottom: 0;
+        .search-result-box  {
+            margin-top: 10px;
+            h5 {
+                margin-bottom: 0;
+            }
         }
 
-        .search-result-title h3 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-align: left;
-        }
-
+        
 
     }
 

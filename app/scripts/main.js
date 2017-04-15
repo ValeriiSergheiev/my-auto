@@ -33,6 +33,10 @@ if (touch) { // remove all :hover stylesheets
 		$(this).addClass('menu-active').siblings().removeClass('menu-active');
 	});
 
+	$('.color-select li').click(function() {
+		$(this).addClass('color-select-active').siblings().removeClass('color-select-active');
+	});
+
 	//Mobile menu
 	$('.mob-menu-btn').click(function(event) {
 		$('.menu').slideToggle('fast');

@@ -55,12 +55,21 @@ select, button {
 	color: $yellow;
 }
 
+.active-border-yellow {
+	border-color: $yellow !important;
+}
+
 .menu-active {
 	background-color: $yellow;
 }
 
+.color-select-active {
+	//border-radius: 50% !important;
+	transform: rotate(45deg);
+}
+
 .section-padding {
-	padding: 45px 0;
+	padding: 20px 0;
 }
 
 .item-shadow {

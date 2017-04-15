@@ -125,920 +125,983 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-4 col-md-3">
-            <div class="search-result-title">
-              <h3>результаты поиска:</h3>
-            </div>
-          </div>
-
-          <div class="col-sm-8 col-md-9">
-            <div class="search-result-box item-border">
-              <h5>Найдено <span>00</span> объявлений</h5>
-              <ul class="search-result clearfix">
-                <li>
-                  Сортировка
-                  <select name="" id="sort-by-price" class="sort-by-price">
-                    <option data-display="Обычная">Обычная</option>
-                    <option value="">Обычная</option>
-                    <option value="">От дорогих к дешёвым</option>
-                    <option value="">От дешёвых к дорогим</option>
-                  </select>
-                </li>
-                <li>
-                  Период подачи
-                  <select name="" id="sort-by-price" class="sort-by-price">
-                    <option data-display="Все">Все</option>
-                    <option value="">Все</option>
-                    <option value="">За 2 часа</option>
-                    <option value="">За сегодня</option>
-                    <option value="">За сутки</option>
-                    <option value="">За 2 дня</option>
-                    <option value="">За неделю</option>
-                    <option value="">За месяц</option>
-                  </select>
-                </li>
-                <li>
-                 <ul class="sort-with-photo">
-                   <li class="check-item">
-                    <input type="checkbox" id="with-photo" name="with-photo" value="with-photo">
-                    <label for="with-photo"><i class="icon icon-photo"></i> с фото</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-md-3">
-          <!-- <aside id="sidebar-parameters"> -->
-          <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
-            <a href="#" class="offcanvas-close"><i class="fa fa-angle-left" aria-hidden="true"></i>Свернуть</a>
-            <form action="#" class="sidebar-refine-parameters-form" id="sidebar-refine-parameters-form">
-              <h5 class="item-border">уточнить параметры</h5>
-
-              <div class="parameters-collapse item-border">
-                <a href="#" class="toggle-btn filter-open">Тип транспорта<span class="caret"></span></a>
-                <div class="catalog-filter">
-                  <select name="brand-select" id="brand-select">
-                    <option data-display="Тип транспорта">Тип транспорта</option>
-                    <option value="1">Грузовые</option>
-                    <option value="2">Легковые</option>
-                    <option value="3">Мотоциклы</option>
-                    <option value="4">Катера</option>
-                  </select>
-
-                  <select name="brand-select" id="brand-select">
-                    <option data-display="Тип кузова">Тип кузова</option>
-                    <option value="1">Седан</option>
-                    <option value="2">Хетчбек</option>
-                    <option value="3">Универсал</option>
-                    <option value="4">Кабриолет</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="parameters-collapse item-border">
-                <a href="#" class="toggle-btn filter-open">Марка, модель, год выпуска<span class="caret"></span></a>
-                <div class="catalog-filter">
-                  <select name="brand-select" id="brand-select">
-                    <option data-display="Марка">Марка</option>
-                    <option value="1">audi</option>
-                    <option value="2">honda</option>
-                    <option value="3">daewoo</option>
-                    <option value="4">kia</option>
-                  </select>
-
-                  <select name="model-select" id="model-select">
-                    <option data-display="Модель">Модель</option>
-                    <option value="1">Модель 1</option>
-                    <option value="2">Модель 2</option>
-                    <option value="3">Модель 3</option>
-                    <option value="4">Модель 4</option>
-                  </select>
-                  <h6>Год</h6>
-                  <div class="search-form-wrapper clearfix">
-                    <div class="search-form-left-2">
-                      <select name="year-from-search" id="year-from-search">
-                        <option data-display="От">От</option>
-                        <option value="1">2007 1</option>
-                        <option value="2">2007 2</option>
-                        <option value="3">2007 3</option>
-                        <option value="4">2007 4</option>
-                      </select>
-                    </div>
-                    <div class="search-form-right-2">
-                      <select name="year-to-search" id="year-to-search">
-                        <option data-display="До">До</option>
-                        <option value="1">2007 1</option>
-                        <option value="2">2007 2</option>
-                        <option value="3">2007 3</option>
-                        <option value="4">2007 4</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="parameters-collapse item-border">
-                <a href="#" class="toggle-btn filter-open">Цена<span class="caret"></span></a>
-                <div class="catalog-filter">
-                  <div class="search-form-wrapper clearfix">
-                    <div class="search-form-left-3">
-                      <select name="price-from-search" id="price-from-search">
-                        <option data-display="От">От</option>
-                        <option value="1">171</option>
-                        <option value="2">172</option>
-                        <option value="3">173</option>
-                        <option value="4">174</option>
-                      </select>
-                    </div>
-                    <div class="search-form-left-3">
-                      <select name="price-to-search" id="price-to-search">
-                        <option data-display="До">До</option>
-                        <option value="1">191</option>
-                        <option value="2">192</option>
-                        <option value="3">193</option>
-                        <option value="4">194</option>
-                      </select>
-                    </div>
-                    <div class="search-form-right-3">
-                      <select name="currency-search" id="currency-search">
-                        <option data-display="$">$</option>
-                        <option value="1">$</option>
-                        <option value="3">грн</option>
-                        <option value="4">руб</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="parameters-collapse item-border">
-                <a href="#" class="toggle-btn filter-open">Область и город<span class="caret"></span></a>
-                <div class="catalog-filter">
-                  <select name="region-search" id="region-search">
-                    <option data-display="Область">Область</option>
-                    <option value="1">Киевская</option>
-                    <option value="2">Херсонская</option>
-                    <option value="3">Закарпатская</option>
-                    <option value="4">Одесская</option>
-                  </select>
-
-                  <select name="region-search" id="city-search">
-                    <option data-display="Город">Город</option>
-                    <option value="1">Киев</option>
-                    <option value="2">Ужгород</option>
-                    <option value="3">Чернигов</option>
-                    <option value="4">Кировоград</option>
-                  </select>
-
-                  <div class="check-item">
-                    <input type="checkbox" id="neighboring-region" name="neighboring-region" value="neighboring-region">
-                    <label for="neighboring-region">Искать в соседних регионах</label>
-                    <div class="check"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="parameters-collapse item-border">
-                <a href="#" class="toggle-btn">Состояние<span class="caret"></span></a>
-                <div class="catalog-filter">
-                  <ul class="state-check">
-                   <li class="check-item">
-                    <input type="checkbox" id="state-check-1" name="state-check" value="state-check-1">
-                    <label for="state-check-1">Гаражное хранение</label>
-                    <div class="check"></div>
-                  </li>
+       <!--  <div class="row">
+         <div class="col-sm-4 col-md-3">
+           <div class="search-result-title">
+             <h3>результаты поиска:</h3>
+           </div>
+         </div>
+       
+         <div class="col-sm-8 col-md-9">
+           <div class="search-result-box item-border">
+             <div class="search-result-title clearfix">
+               <h3 class="pull-left">результаты поиска:</h3>
+               <h5 class="pull-left">Найдено <span>00</span> объявлений</h5>
+             </div>
+             <ul class="search-result clearfix">
+               <li>
+                 Сортировка
+                 <select name="" id="sort-by-price" class="sort-by-price">
+                   <option data-display="Обычная">Обычная</option>
+                   <option value="">Обычная</option>
+                   <option value="">От дорогих к дешёвым</option>
+                   <option value="">От дешёвых к дорогим</option>
+                 </select>
+               </li>
+               <li>
+                 Период подачи
+                 <select name="" id="sort-by-price" class="sort-by-price">
+                   <option data-display="Все">Все</option>
+                   <option value="">Все</option>
+                   <option value="">За 2 часа</option>
+                   <option value="">За сегодня</option>
+                   <option value="">За сутки</option>
+                   <option value="">За 2 дня</option>
+                   <option value="">За неделю</option>
+                   <option value="">За месяц</option>
+                 </select>
+               </li>
+               <li>
+                <ul class="sort-with-photo">
                   <li class="check-item">
-                    <input type="checkbox" id="state-check-2" name="state-check" value="state-check-2">
-                    <label for="state-check-2">Индивидуальная комплектация</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-3" name="state-check" value="state-check-3">
-                    <label for="state-check-3">Не бит</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-4" name="state-check" value="state-check-4">
-                    <label for="state-check-4">Не крашен</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-5" name="state-check" value="state-check-5">
-                    <label for="state-check-5">Первая регистрация</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-6" name="state-check" value="state-check-6">
-                    <label for="state-check-6">Первый владелец</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-7" name="state-check" value="state-check-7">
-                    <label for="state-check-7">Пригоню под заказ</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-8" name="state-check" value="state-check-8">
-                    <label for="state-check-8">Ручное управление</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-9" name="state-check" value="state-check-9">
-                    <label for="state-check-9">Сервисная книжка</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="state-check-10" name="state-check" value="state-check-10">
-                    <label for="state-check-10">Требует ремонта</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                   <input type="checkbox" id="with-photo" name="with-photo" value="with-photo">
+                   <label for="with-photo"><i class="icon icon-photo"></i> с фото</label>
+                   <div class="check"></div>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div> -->
+
+     <div class="row">
+      <div class="col-sm-4 col-md-3">
+        <!-- <aside id="sidebar-parameters"> -->
+        <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+          <a href="#" class="offcanvas-close"><i class="fa fa-angle-left" aria-hidden="true"></i>Свернуть</a>
+          <form action="#" class="sidebar-refine-parameters-form" id="sidebar-refine-parameters-form">
+            <h5 class="item-border">уточнить параметры</h5>
 
             <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Пробег (тыс./км)<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Тип привода<span class="caret"></span></a>
+              <a href="#" class="toggle-btn filter-open">Тип транспорта<span class="caret"></span></a>
               <div class="catalog-filter">
-                <ul class="type-of-drive-radio">
-                  <li class="check-item">
-                    <input type="radio" id="drive-radio-1" name="drive-radio" value="">
-                    <label for="drive-radio-1">Полный</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="drive-radio-2" name="drive-radio" value="">
-                    <label for="drive-radio-2">Передний</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="drive-radio-3" name="drive-radio" value="">
-                    <label for="drive-radio-3">Задний</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Коробка передач<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <ul class="еransmission-radio">
-                  <li class="check-item">
-                    <input type="radio" id="transmission-radio-1" name="transmission-radio" value="">
-                    <label for="transmission-radio-1">Ручная / механика</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="transmission-radio-2" name="transmission-radio" value="">
-                    <label for="transmission-radio-2">Автомат</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="transmission-radio-3" name="transmission-radio" value="">
-                    <label for="transmission-radio-3">Типтроник</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="transmission-radio-4" name="transmission-radio" value="">
-                    <label for="transmission-radio-4">Адаптивная</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="transmission-radio-5" name="transmission-radio" value="">
-                    <label for="transmission-radio-5">Вариатор</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Топливо<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <ul class="еransmission-radio">
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-1" name="fuel-radio" value="">
-                    <label for="fuel-radio-1">Бензин</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-2" name="fuel-radio" value="">
-                    <label for="fuel-radio-2">Дизель</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-3" name="fuel-radio" value="">
-                    <label for="fuel-radio-3">Газ</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-4" name="fuel-radio" value="">
-                    <label for="fuel-radio-4">Газ / бензин</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-5" name="fuel-radio" value="">
-                    <label for="fuel-radio-5">Гибрид</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-6" name="fuel-radio" value="">
-                    <label for="fuel-radio-6">Электро</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-7" name="fuel-radio" value="">
-                    <label for="fuel-radio-7">Другое</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-8" name="fuel-radio" value="">
-                    <label for="fuel-radio-8">Газ метан</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="radio" id="fuel-radio-9" name="fuel-radio" value="">
-                    <label for="fuel-radio-9">Газ пропан-бутан</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Расход топлива<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" name="" value="" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" name="" value="" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Мощность (л. с.)<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" name="" value="" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" name="" value="" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Объём двигателя (л)<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" name="" value="" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" name="" value="" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Цвет<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="color-select" id="color-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Синий</option>
-                  <option value="2">Красный</option>
-                  <option value="3">Зелёный</option>
-                  <option value="4">Серый</option>
+                <select name="brand-select" id="brand-select">
+                  <option data-display="Тип транспорта">Тип транспорта</option>
+                  <option value="1">Грузовые</option>
+                  <option value="2">Легковые</option>
+                  <option value="3">Мотоциклы</option>
+                  <option value="4">Катера</option>
                 </select>
+
+                <select name="brand-select" id="brand-select">
+                  <option data-display="Тип кузова">Тип кузова</option>
+                  <option value="1">Седан</option>
+                  <option value="2">Хетчбек</option>
+                  <option value="3">Универсал</option>
+                  <option value="4">Кабриолет</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="parameters-collapse item-border">
+              <a href="#" class="toggle-btn filter-open">Марка, модель, год выпуска<span class="caret"></span></a>
+              <div class="catalog-filter">
+                <select name="brand-select" id="brand-select">
+                  <option data-display="Марка">Марка</option>
+                  <option value="1">audi</option>
+                  <option value="2">honda</option>
+                  <option value="3">daewoo</option>
+                  <option value="4">kia</option>
+                </select>
+
+                <select name="model-select" id="model-select">
+                  <option data-display="Модель">Модель</option>
+                  <option value="1">Модель 1</option>
+                  <option value="2">Модель 2</option>
+                  <option value="3">Модель 3</option>
+                  <option value="4">Модель 4</option>
+                </select>
+                <h6>Год</h6>
+                <div class="search-form-wrapper clearfix">
+                  <div class="search-form-left-2">
+                    <select name="year-from-search" id="year-from-search">
+                      <option data-display="От">От</option>
+                      <option value="1">2007 1</option>
+                      <option value="2">2007 2</option>
+                      <option value="3">2007 3</option>
+                      <option value="4">2007 4</option>
+                    </select>
+                  </div>
+                  <div class="search-form-right-2">
+                    <select name="year-to-search" id="year-to-search">
+                      <option data-display="До">До</option>
+                      <option value="1">2007 1</option>
+                      <option value="2">2007 2</option>
+                      <option value="3">2007 3</option>
+                      <option value="4">2007 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div><a href="#">Ещё марки</a></div>
+              </div>
+            </div>
+
+            <div class="parameters-collapse item-border">
+              <a href="#" class="toggle-btn filter-open">Цена<span class="caret"></span></a>
+              <div class="catalog-filter">
+                <div class="search-form-wrapper clearfix">
+                  <div class="search-form-left-3">
+                    <select name="price-from-search" id="price-from-search">
+                      <option data-display="От">От</option>
+                      <option value="1">171</option>
+                      <option value="2">172</option>
+                      <option value="3">173</option>
+                      <option value="4">174</option>
+                    </select>
+                  </div>
+                  <div class="search-form-left-3">
+                    <select name="price-to-search" id="price-to-search">
+                      <option data-display="До">До</option>
+                      <option value="1">191</option>
+                      <option value="2">192</option>
+                      <option value="3">193</option>
+                      <option value="4">194</option>
+                    </select>
+                  </div>
+                  <div class="search-form-right-3">
+                    <select name="currency-search" id="currency-search">
+                      <option data-display="$">$</option>
+                      <option value="1">$</option>
+                      <option value="3">грн</option>
+                      <option value="4">руб</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="parameters-collapse item-border">
+              <a href="#" class="toggle-btn filter-open">Область и город<span class="caret"></span></a>
+              <div class="catalog-filter">
+                <select name="region-search" id="region-search">
+                  <option data-display="Область">Область</option>
+                  <option value="1">Киевская</option>
+                  <option value="2">Херсонская</option>
+                  <option value="3">Закарпатская</option>
+                  <option value="4">Одесская</option>
+                </select>
+
+                <select name="region-search" id="city-search">
+                  <option data-display="Город">Город</option>
+                  <option value="1">Киев</option>
+                  <option value="2">Ужгород</option>
+                  <option value="3">Чернигов</option>
+                  <option value="4">Кировоград</option>
+                </select>
+
                 <div class="check-item">
-                  <input type="checkbox" id="color-check" class="color-check" name="" value="">
-                  <label for="color-check">Металлик</label>
+                  <input type="checkbox" id="neighboring-region" name="neighboring-region" value="neighboring-region">
+                  <label for="neighboring-region">Искать в соседних регионах</label>
                   <div class="check"></div>
                 </div>
               </div>
             </div>
 
             <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Количество мест<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" name="" value="" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" name="" value="" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Количество дверей<span class="caret"></span></a>
-              <div class="catalog-filter clearfix">
-                <div class="search-form-left-2">
-                  <input type="text" name="" value="" placeholder="От">
-                </div>
-                <div class="search-form-right-2">
-                  <input type="text" name="" value="" placeholder="До">
-                </div>
-              </div>
-            </div>
-
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Комфорт<span class="caret"></span></a>
+              <a href="#" class="toggle-btn">Состояние<span class="caret"></span></a>
               <div class="catalog-filter">
-                <ul class="comfort-check">
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-1" name="comfort-check" value="comfort-check-1">
-                    <label for="comfort-check-1">Бортовой компьютер</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-2" name="comfort-check" value="comfort-check-2">
-                    <label for="comfort-check-2">Датчик света</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-3" name="comfort-check" value="comfort-check-3">
-                    <label for="comfort-check-3">Запуск кнопкой</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-4" name="comfort-check" value="comfort-check-4">
-                    <label for="comfort-check-4">Климат контроль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-5" name="comfort-check" value="comfort-check-5">
-                    <label for="comfort-check-5">Кожаный салон</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-6" name="comfort-check" value="comfort-check-6">
-                    <label for="comfort-check-6">Кондиционер </label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-7" name="comfort-check" value="comfort-check-7">
-                    <label for="comfort-check-7">Круиз контроль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-8" name="comfort-check" value="comfort-check-8">
-                    <label for="comfort-check-8">Люк </label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-9" name="comfort-check" value="comfort-check-9">
-                    <label for="comfort-check-9">Мультируль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-10" name="comfort-check" value="comfort-check-10">
-                    <label for="comfort-check-10">Омыватель фар</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-11" name="comfort-check" value="comfort-check-11">
-                    <label for="comfort-check-11">Память сидений</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-12" name="comfort-check" value="comfort-check-12">
-                    <label for="comfort-check-12">Парктроник </label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-13" name="comfort-check" value="comfort-check-13">
-                    <label for="comfort-check-13">Подогрев зеркал</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-14" name="comfort-check" value="comfort-check-14">
-                    <label for="comfort-check-14">Подогрев руля</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-15" name="comfort-check" value="comfort-check-15">
-                    <label for="comfort-check-15">Подогрев сидений</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-16" name="comfort-check" value="comfort-check-16">
-                    <label for="comfort-check-16">Сенсор дождя</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-17" name="comfort-check" value="comfort-check-17">
-                    <label for="comfort-check-17">Усилитель руля</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="comfort-check-18" name="comfort-check" value="comfort-check-18">
-                    <label for="comfort-check-18">Эл. стеклоподъемники</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
+                <ul class="state-check">
+                 <li class="check-item">
+                  <input type="checkbox" id="state-check-1" name="state-check" value="state-check-1">
+                  <label for="state-check-1">Гаражное хранение</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-2" name="state-check" value="state-check-2">
+                  <label for="state-check-2">Индивидуальная комплектация</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-3" name="state-check" value="state-check-3">
+                  <label for="state-check-3">Не бит</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-4" name="state-check" value="state-check-4">
+                  <label for="state-check-4">Не крашен</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-5" name="state-check" value="state-check-5">
+                  <label for="state-check-5">Первая регистрация</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-6" name="state-check" value="state-check-6">
+                  <label for="state-check-6">Первый владелец</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-7" name="state-check" value="state-check-7">
+                  <label for="state-check-7">Пригоню под заказ</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-8" name="state-check" value="state-check-8">
+                  <label for="state-check-8">Ручное управление</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-9" name="state-check" value="state-check-9">
+                  <label for="state-check-9">Сервисная книжка</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="state-check-10" name="state-check" value="state-check-10">
+                  <label for="state-check-10">Требует ремонта</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Пробег (тыс./км)<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Мультимедиа<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <ul class="multimedia-check">
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-1" name="multimedia-check" value="multimedia-check-1">
-                    <label for="multimedia-check-1">CD</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-2" name="multimedia-check" value="multimedia-check-2">
-                    <label for="multimedia-check-2">DVD</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-3" name="multimedia-check" value="multimedia-check-3">
-                    <label for="multimedia-check-3">MP3</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-4" name="multimedia-check" value="multimedia-check-4">
-                    <label for="multimedia-check-4">Акустика</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-5" name="multimedia-check" value="multimedia-check-5">
-                    <label for="multimedia-check-5">Магнитола</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-6" name="multimedia-check" value="multimedia-check-6">
-                    <label for="multimedia-check-6">Сабвуфер </label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="multimedia-check-7" name="multimedia-check" value="multimedia-check-7">
-                    <label for="multimedia-check-7">Система навигации GPS</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Тип привода<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="type-of-drive-radio">
+                <li class="check-item">
+                <input type="checkbox" id="drive-radio-1" name="drive-radio-1" value="">
+                  <label for="drive-radio-1">Полный</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                <input type="checkbox" id="drive-radio-2" name="drive-radio-2" value="">
+                  <label for="drive-radio-2">Передний</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                <input type="checkbox" id="drive-radio-3" name="drive-radio-3" value="">
+                  <label for="drive-radio-3">Задний</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Коробка передач<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="еransmission-radio">
+                <li class="check-item">
+                  <input type="checkbox" id="transmission-radio-1" name="transmission-radio-1" value="">
+                  <label for="transmission-radio-1">Ручная / механика</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="transmission-radio-2" name="transmission-radio-2" value="">
+                  <label for="transmission-radio-2">Автомат</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="transmission-radio-3" name="transmission-radio-3" value="">
+                  <label for="transmission-radio-3">Типтроник</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="transmission-radio-4" name="transmission-radio-4" value="">
+                  <label for="transmission-radio-4">Адаптивная</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="transmission-radio-5" name="transmission-radio-5" value="">
+                  <label for="transmission-radio-5">Вариатор</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Топливо<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="еransmission-radio">
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-1" name="fuel-radio-1" value="">
+                  <label for="fuel-radio-1">Бензин</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-2" name="fuel-radio-2" value="">
+                  <label for="fuel-radio-2">Дизель</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-3" name="fuel-radio-3" value="">
+                  <label for="fuel-radio-3">Газ</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-4" name="fuel-radio-4" value="">
+                  <label for="fuel-radio-4">Газ / бензин</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-5" name="fuel-radio-5" value="">
+                  <label for="fuel-radio-5">Гибрид</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-6" name="fuel-radio-6" value="">
+                  <label for="fuel-radio-6">Электро</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-7" name="fuel-radio-7" value="">
+                  <label for="fuel-radio-7">Другое</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-8" name="fuel-radio-8" value="">
+                  <label for="fuel-radio-8">Газ метан</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="fuel-radio-9" name="fuel-radio-9" value="">
+                  <label for="fuel-radio-9">Газ пропан-бутан</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Расход топлива<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" name="" value="" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" name="" value="" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Безопасность<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <ul class="security-check">
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-1" name="security-check" value="security-check-1">
-                    <label for="security-check-1">ABD</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-2" name="security-check" value="security-check-2">
-                    <label for="security-check-2">ABS</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-3" name="security-check" value="security-check-3">
-                    <label for="security-check-3">ESP</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-4" name="security-check" value="security-check-4">
-                    <label for="security-check-4">Бронированный автомобиль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-5" name="security-check" value="security-check-5">
-                    <label for="security-check-5">Галогенные фары</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-6" name="security-check" value="security-check-6">
-                    <label for="security-check-6">Замок на КПП </label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-7" name="security-check" value="security-check-7">
-                    <label for="security-check-7">Иммобилайзер</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-8" name="security-check" value="security-check-8">
-                    <label for="security-check-8">Пневмоподвеска</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-9" name="security-check" value="security-check-9">
-                    <label for="security-check-9">Подушка безопасности (Airbag)</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-10" name="security-check" value="security-check-10">
-                    <label for="security-check-10">Серворуль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="security-check-11" name="security-check" value="security-check-11">
-                    <label for="security-check-11">Сигнализация</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Мощность (л. с.)<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" name="" value="" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" name="" value="" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Растаможка<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="сustoms-select" id="сustoms-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Растаможен</option>
-                  <option value="2">Не растаможен</option>
-                </select>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Объём двигателя (л)<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" name="" value="" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" name="" value="" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Кредит<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="credit-select" id="credit-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Да</option>
-                  <option value="2">Нет</option>
-                </select>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Цвет<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <!-- <select name="color-select" id="color-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Синий</option>
+                <option value="2">Красный</option>
+                <option value="3">Зелёный</option>
+                <option value="4">Серый</option>
+              </select> -->
+              <ul class="color-select clearfix">
+                <li data-color="red" title="красный"></li>
+                <li data-color="green" title="красный"></li>
+                <li data-color="blue" title="красный"></li>
+                <li data-color="black" title="красный"></li>
+                <li data-color="red" title="красный"></li>
+                <li data-color="green" title="красный"></li>
+                <li data-color="blue" title="красный"></li>
+                <li data-color="red" title="красный"></li>
+                <li data-color="black" title="красный"></li>
+                <li data-color="green" title="красный"></li>
+                <li data-color="black" title="красный"></li>
+                <li data-color="red" title="красный"></li>
+                <li data-color="green" title="красный"></li>
+                <li data-color="black" title="красный"></li>
+                <li data-color="blue" title="красный"></li>
+                <li data-color="blue" title="красный"></li>
+              </ul>
+              <div class="check-item">
+                <input type="checkbox" id="color-check" class="color-check" name="" value="">
+                <label for="color-check">Металлик</label>
+                <div class="check"></div>
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Конфискат<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="confiscat-select" id="confiscat-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Да</option>
-                  <option value="2">Нет</option>
-                </select>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Количество мест<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" name="" value="" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" name="" value="" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Не на ходу<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="serviceable-select" id="serviceable-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Да</option>
-                  <option value="2">Нет</option>
-                </select>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Количество дверей<span class="caret"></span></a>
+            <div class="catalog-filter clearfix">
+              <div class="search-form-left-2">
+                <input type="text" name="" value="" placeholder="От">
+              </div>
+              <div class="search-form-right-2">
+                <input type="text" name="" value="" placeholder="До">
               </div>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Повреждение<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="damage-select" id="damage-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Да</option>
-                  <option value="2">Нет</option>
-                </select>
-              </div>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Комфорт<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="comfort-check">
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-1" name="comfort-check" value="comfort-check-1">
+                  <label for="comfort-check-1">Бортовой компьютер</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-2" name="comfort-check" value="comfort-check-2">
+                  <label for="comfort-check-2">Датчик света</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-3" name="comfort-check" value="comfort-check-3">
+                  <label for="comfort-check-3">Запуск кнопкой</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-4" name="comfort-check" value="comfort-check-4">
+                  <label for="comfort-check-4">Климат контроль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-5" name="comfort-check" value="comfort-check-5">
+                  <label for="comfort-check-5">Кожаный салон</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-6" name="comfort-check" value="comfort-check-6">
+                  <label for="comfort-check-6">Кондиционер </label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-7" name="comfort-check" value="comfort-check-7">
+                  <label for="comfort-check-7">Круиз контроль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-8" name="comfort-check" value="comfort-check-8">
+                  <label for="comfort-check-8">Люк </label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-9" name="comfort-check" value="comfort-check-9">
+                  <label for="comfort-check-9">Мультируль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-10" name="comfort-check" value="comfort-check-10">
+                  <label for="comfort-check-10">Омыватель фар</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-11" name="comfort-check" value="comfort-check-11">
+                  <label for="comfort-check-11">Память сидений</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-12" name="comfort-check" value="comfort-check-12">
+                  <label for="comfort-check-12">Парктроник </label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-13" name="comfort-check" value="comfort-check-13">
+                  <label for="comfort-check-13">Подогрев зеркал</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-14" name="comfort-check" value="comfort-check-14">
+                  <label for="comfort-check-14">Подогрев руля</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-15" name="comfort-check" value="comfort-check-15">
+                  <label for="comfort-check-15">Подогрев сидений</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-16" name="comfort-check" value="comfort-check-16">
+                  <label for="comfort-check-16">Сенсор дождя</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-17" name="comfort-check" value="comfort-check-17">
+                  <label for="comfort-check-17">Усилитель руля</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="comfort-check-18" name="comfort-check" value="comfort-check-18">
+                  <label for="comfort-check-18">Эл. стеклоподъемники</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Пригнан из<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <select name="imported-select" id="imported-select">
-                  <option data-display="Выберите из списка">Выберите из списка</option>
-                  <option value="1">Чехия</option>
-                  <option value="2">Германия</option>
-                </select>
-              </div>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Мультимедиа<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="multimedia-check">
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-1" name="multimedia-check" value="multimedia-check-1">
+                  <label for="multimedia-check-1">CD</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-2" name="multimedia-check" value="multimedia-check-2">
+                  <label for="multimedia-check-2">DVD</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-3" name="multimedia-check" value="multimedia-check-3">
+                  <label for="multimedia-check-3">MP3</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-4" name="multimedia-check" value="multimedia-check-4">
+                  <label for="multimedia-check-4">Акустика</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-5" name="multimedia-check" value="multimedia-check-5">
+                  <label for="multimedia-check-5">Магнитола</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-6" name="multimedia-check" value="multimedia-check-6">
+                  <label for="multimedia-check-6">Сабвуфер </label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="multimedia-check-7" name="multimedia-check" value="multimedia-check-7">
+                  <label for="multimedia-check-7">Система навигации GPS</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="parameters-collapse item-border">
-              <a href="#" class="toggle-btn">Прочее<span class="caret"></span></a>
-              <div class="catalog-filter">
-                <ul class="other-check">
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-1" name="other-check" value="multimedia-check-1">
-                    <label for="other-check-1">Газовая установка (ГБО)</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-2" name="other-check" value="multimedia-check-2">
-                    <label for="other-check-2">Дерево</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-3" name="other-check" value="multimedia-check-3">
-                    <label for="other-check-3">Длинная база</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-4" name="other-check" value="multimedia-check-4">
-                    <label for="other-check-4">Кузов MAXI</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-5" name="other-check" value="multimedia-check-5">
-                    <label for="other-check-5">Правый руль</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-6" name="other-check" value="multimedia-check-6">
-                    <label for="other-check-6">Тонирование стекол</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-7" name="other-check" value="multimedia-check-7">
-                    <label for="other-check-7">Тюнинг</label>
-                    <div class="check"></div>
-                  </li>
-                  <li class="check-item">
-                    <input type="checkbox" id="other-check-7" name="other-check" value="multimedia-check-7">
-                    <label for="other-check-7">Фаркоп</label>
-                    <div class="check"></div>
-                  </li>
-                </ul>
-              </div>
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Безопасность<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="security-check">
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-1" name="security-check" value="security-check-1">
+                  <label for="security-check-1">ABD</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-2" name="security-check" value="security-check-2">
+                  <label for="security-check-2">ABS</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-3" name="security-check" value="security-check-3">
+                  <label for="security-check-3">ESP</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-4" name="security-check" value="security-check-4">
+                  <label for="security-check-4">Бронированный автомобиль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-5" name="security-check" value="security-check-5">
+                  <label for="security-check-5">Галогенные фары</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-6" name="security-check" value="security-check-6">
+                  <label for="security-check-6">Замок на КПП </label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-7" name="security-check" value="security-check-7">
+                  <label for="security-check-7">Иммобилайзер</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-8" name="security-check" value="security-check-8">
+                  <label for="security-check-8">Пневмоподвеска</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-9" name="security-check" value="security-check-9">
+                  <label for="security-check-9">Подушка безопасности (Airbag)</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-10" name="security-check" value="security-check-10">
+                  <label for="security-check-10">Серворуль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="security-check-11" name="security-check" value="security-check-11">
+                  <label for="security-check-11">Сигнализация</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="form-submit-group item-border">
-              <input type="submit" value="Подобрать авто">
-              <input type="reset" value="Сбросить все фильтры">
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Растаможка<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="сustoms-select" id="сustoms-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Растаможен</option>
+                <option value="2">Не растаможен</option>
+              </select>
             </div>
+          </div>
 
-          </form>
-        </div>
-        <!-- </aside> -->
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Кредит<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="credit-select" id="credit-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Конфискат<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="confiscat-select" id="confiscat-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Не на ходу<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="serviceable-select" id="serviceable-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Повреждение<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="damage-select" id="damage-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Пригнан из<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <select name="imported-select" id="imported-select">
+                <option data-display="Выберите из списка">Выберите из списка</option>
+                <option value="1">Чехия</option>
+                <option value="2">Германия</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="parameters-collapse item-border">
+            <a href="#" class="toggle-btn">Прочее<span class="caret"></span></a>
+            <div class="catalog-filter">
+              <ul class="other-check">
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-1" name="other-check" value="multimedia-check-1">
+                  <label for="other-check-1">Газовая установка (ГБО)</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-2" name="other-check" value="multimedia-check-2">
+                  <label for="other-check-2">Дерево</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-3" name="other-check" value="multimedia-check-3">
+                  <label for="other-check-3">Длинная база</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-4" name="other-check" value="multimedia-check-4">
+                  <label for="other-check-4">Кузов MAXI</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-5" name="other-check" value="multimedia-check-5">
+                  <label for="other-check-5">Правый руль</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-6" name="other-check" value="multimedia-check-6">
+                  <label for="other-check-6">Тонирование стекол</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-7" name="other-check" value="multimedia-check-7">
+                  <label for="other-check-7">Тюнинг</label>
+                  <div class="check"></div>
+                </li>
+                <li class="check-item">
+                  <input type="checkbox" id="other-check-7" name="other-check" value="multimedia-check-7">
+                  <label for="other-check-7">Фаркоп</label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-submit-group item-border">
+            <input type="submit" value="Подобрать авто">
+            <input type="reset" value="Сбросить все фильтры">
+          </div>
+
+        </form>
       </div>
-
-      <div class="col-sm-8 col-md-9">
-        <main id="catalog-main">
-          <a href="#" class="advert advert-catalog center-block clearfix">
-            <div class="advert-photo">
-              <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
-            </div>
-            <div class="advert-details">
-              <div class="timer">
-                <i class="icon icon-timer"></i>
-                <span>00.00.00</span>
-              </div>
-              <h6>Daewoo Sens 2005</h6>
-              <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
-              <ul class="characteristic clearfix">
-                <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
-                <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
-                <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
-                <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
-              <ul class="auction">
-                <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
-                <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
-              </ul>
-              <div class="advert-contact clearfix">
-                <span>Алексей (096) 000 00 00</span>
-                <span>Подробнее <i class="icon icon-arrow-right"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="advert advert-catalog center-block clearfix">
-            <div class="advert-photo">
-              <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
-            </div>
-            <div class="advert-details">
-              <div class="timer">
-                <i class="icon icon-timer"></i>
-                <span>00.00.00</span>
-              </div>
-              <h6>Daewoo Sens 2005</h6>
-              <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
-              <ul class="characteristic clearfix">
-                <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
-                <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
-                <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
-                <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
-              <ul class="auction">
-                <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
-                <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
-              </ul>
-              <div class="advert-contact clearfix">
-                <span>Алексей (096) 000 00 00</span>
-                <span>Подробнее <i class="icon icon-arrow-right"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="advert advert-catalog center-block clearfix">
-            <div class="advert-photo">
-              <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
-            </div>
-            <div class="advert-details">
-              <div class="timer">
-                <i class="icon icon-timer"></i>
-                <span>00.00.00</span>
-              </div>
-              <h6>Daewoo Sens 2005</h6>
-              <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
-              <ul class="characteristic clearfix">
-                <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
-                <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
-                <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
-                <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
-              <ul class="auction">
-                <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
-                <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
-              </ul>
-              <div class="advert-contact clearfix">
-                <span>Алексей (096) 000 00 00</span>
-                <span>Подробнее <i class="icon icon-arrow-right"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="advert advert-catalog center-block clearfix">
-            <div class="advert-photo">
-              <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
-            </div>
-            <div class="advert-details">
-              <div class="timer">
-                <i class="icon icon-timer"></i>
-                <span>00.00.00</span>
-              </div>
-              <h6>Daewoo Sens 2005</h6>
-              <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
-              <ul class="characteristic clearfix">
-                <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
-                <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
-                <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
-                <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
-              <ul class="auction">
-                <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
-                <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
-              </ul>
-              <div class="advert-contact clearfix">
-                <span>Алексей (096) 000 00 00</span>
-                <span>Подробнее <i class="icon icon-arrow-right"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="advert advert-catalog center-block clearfix">
-            <div class="advert-photo">
-              <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
-            </div>
-            <div class="advert-details">
-              <div class="timer">
-                <i class="icon icon-timer"></i>
-                <span>00.00.00</span>
-              </div>
-              <h6>Daewoo Sens 2005</h6>
-              <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
-              <ul class="characteristic clearfix">
-                <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
-                <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
-                <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
-                <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
-              <ul class="auction">
-                <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
-                <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
-              </ul>
-              <div class="advert-contact clearfix">
-                <span>Алексей (096) 000 00 00</span>
-                <span>Подробнее <i class="icon icon-arrow-right"></i></span>
-              </div>
-            </div>
-          </a>
-        </main>
-      </div>
+      <!-- </aside> -->
     </div>
+
+    <div class="col-sm-8 col-md-9">
+
+      <div class="search-result-box item-border">
+        <div class="search-result-title clearfix">
+          <h3 class="pull-left">результаты поиска:</h3>
+          <h5 class="pull-left">Найдено <span>00</span> объявлений</h5>
+        </div>
+        <ul class="search-result clearfix">
+          <li>
+            Сортировка
+            <select name="" id="sort-by-price" class="sort-by-price">
+              <option data-display="Обычная">Обычная</option>
+              <option value="">Обычная</option>
+              <option value="">От дорогих к дешёвым</option>
+              <option value="">От дешёвых к дорогим</option>
+            </select>
+          </li>
+          <li>
+            Период подачи
+            <select name="" id="sort-by-price" class="sort-by-price">
+              <option data-display="Все">Все</option>
+              <option value="">Все</option>
+              <option value="">За 2 часа</option>
+              <option value="">За сегодня</option>
+              <option value="">За сутки</option>
+              <option value="">За 2 дня</option>
+              <option value="">За неделю</option>
+              <option value="">За месяц</option>
+            </select>
+          </li>
+          <li>
+           <ul class="sort-with-photo">
+             <li class="check-item">
+              <input type="checkbox" id="with-photo" name="with-photo" value="with-photo">
+              <label for="with-photo"><i class="icon icon-photo"></i> с фото</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <main id="catalog-main">
+      <div class="advert advert-catalog center-block clearfix">
+        <div class="advert-photo advert-label-new">
+          <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
+        </div>
+        <div class="advert-details">
+          <div class="timer">
+            <i class="icon icon-timer"></i>
+            <span>00.00.00</span>
+          </div>
+          <h6>Daewoo Sens 2005</h6>
+          <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
+          <ul class="characteristic clearfix">
+            <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+            <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+            <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+            <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
+          <ul class="auction">
+            <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
+            <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
+          </ul>
+          <div class="advert-contact clearfix">
+            <span>Алексей (096) 000 00 00</span>
+            <a href="#">Подробнее <i class="icon icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="advert advert-catalog active-border-yellow center-block clearfix">
+        <div class="advert-photo advert-label-interest">
+          <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
+        </div>
+        <div class="advert-details">
+          <div class="timer">
+            <i class="icon icon-timer"></i>
+            <span>00.00.00</span>
+          </div>
+          <h6>Daewoo Sens 2005</h6>
+          <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
+          <ul class="characteristic clearfix">
+            <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+            <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+            <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+            <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
+          <ul class="auction">
+            <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
+            <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
+          </ul>
+          <div class="advert-contact clearfix">
+            <span>Алексей (096) 000 00 00</span>
+            <a href="#">Подробнее <i class="icon icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="advert advert-catalog center-block clearfix">
+        <div class="advert-photo advert-label-quickly">
+          <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
+        </div>
+        <div class="advert-details">
+          <div class="timer">
+            <i class="icon icon-timer"></i>
+            <span>00.00.00</span>
+          </div>
+          <h6>Daewoo Sens 2005</h6>
+          <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
+          <ul class="characteristic clearfix">
+            <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+            <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+            <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+            <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
+          <ul class="auction">
+            <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
+            <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
+          </ul>
+          <div class="advert-contact clearfix">
+            <span>Алексей (096) 000 00 00</span>
+            <a href="#">Подробнее <i class="icon icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="advert advert-catalog active-border-yellow center-block clearfix">
+        <div class="advert-photo">
+          <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
+        </div>
+        <div class="advert-details">
+          <div class="timer">
+            <i class="icon icon-timer"></i>
+            <span>00.00.00</span>
+          </div>
+          <h6>Daewoo Sens 2005</h6>
+          <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
+          <ul class="characteristic clearfix">
+            <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+            <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+            <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+            <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
+          <ul class="auction">
+            <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
+            <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
+          </ul>
+          <div class="advert-contact clearfix">
+            <span>Алексей (096) 000 00 00</span>
+            <a href="#">Подробнее <i class="icon icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="advert advert-catalog center-block clearfix">
+        <div class="advert-photo">
+          <img src="images/cars/daewoo_sens_300x250.jpg" class="img-responsive" alt="image">
+        </div>
+        <div class="advert-details">
+          <div class="timer">
+            <i class="icon icon-timer"></i>
+            <span>00.00.00</span>
+          </div>
+          <h6>Daewoo Sens 2005</h6>
+          <h5><span>000.00 $</span> / 000.00 грн <span>(1у.е. = 0.00)</span></h5>
+          <ul class="characteristic clearfix">
+            <li><i class="icon icon-odo" title="Пробег"></i>185тыс.км</li>
+            <li><i class="icon icon-fuel" title="Топливо"></i>Газ/бенз</li>
+            <li><i class="icon icon-motor" title="Объём"></i>1.3</li>
+            <li><i class="icon icon-geo" title="Адрес"></i>Иваново</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non delectus ipsa deleniti minus, culpa cupiditate reiciendis, aut ullam esse!</p>
+          <ul class="auction">
+            <li><i class="icon icon-money"></i>Реальному покупателю Торг</li>
+            <li><i class="icon icon-exchange"></i>Рассмотрю варианты по обмену</li>
+          </ul>
+          <div class="advert-contact clearfix">
+            <span>Алексей (096) 000 00 00</span>
+            <a href="#">Подробнее <i class="icon icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
+</div>
+</div>
 </section>
 
 <!-- Footer -->
