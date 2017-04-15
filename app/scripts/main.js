@@ -34,7 +34,8 @@ if (touch) { // remove all :hover stylesheets
 	});
 
 	$('.color-select li').click(function() {
-		$(this).addClass('color-select-active').siblings().removeClass('color-select-active');
+		//$(this).addClass('color-select-active').siblings().removeClass('color-select-active');
+		$(this).toggleClass('color-select-active');
 	});
 
 	//Mobile menu

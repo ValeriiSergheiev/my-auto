@@ -175,10 +175,7 @@
             display: inline-block;
         }
 
-        .timer {
-            display: none;
-        }
-
+        
         .navbar-offcanvas {
             padding-top: 15px;
         }
@@ -267,6 +264,52 @@
 
         .lang {
             float: right;
+        }
+
+        .auction {
+            display: none;
+        }
+
+        .advert-contact {
+            span {
+                float: none;
+                display: block;
+                margin: 0;
+            }
+            a {
+                float: none;
+                margin: 0;
+            }
+        }
+
+        .advert-catalog .advert-photo {
+            float: none;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .timer {
+            top: auto;
+            bottom: 3px;
+        }
+
+        .advert-catalog .advert-details {
+            h5 {
+                margin: 5px 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+
+        .advert-catalog .advert-details {
+            h6 {
+                text-align: center;
+                max-width: 100%;
+            }
+            h5 {
+                text-align: center;
+            }
         }
 
     }

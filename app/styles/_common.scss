@@ -65,7 +65,9 @@ select, button {
 
 .color-select-active {
 	//border-radius: 50% !important;
-	transform: rotate(45deg);
+	transform: scale(.8);
+	opacity: 1 !important;
+	box-shadow: none !important;
 }
 
 .section-padding {
