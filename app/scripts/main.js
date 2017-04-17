@@ -110,5 +110,11 @@ if (touch) { // remove all :hover stylesheets
 		$(this).toggleClass('filter-open');
 	});
 
+	//Tabs
+	$('#myTabs a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	})
+
 
 });
