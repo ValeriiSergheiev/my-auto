@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
   <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <link rel="stylesheet" href="/bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.css" />
+  <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -116,18 +117,17 @@
       </div>
     </div>
 
-    <!-- Section Extended-Type -->
-    <section id="extended-search-type" class="section-padding">
-      <div class="container">
+    <form action="#" id="extended-search-form">
 
-        <div class="block-title">
-          <h3>Тип транспорта</h3>
-        </div>
+      <!-- Section Extended-Type -->
+      <section id="extended-search-type" class="section-padding">
+        <div class="container">
 
-        <form action="#" id="extended-search-form">
+          <div class="block-title">
+            <h3>Тип транспорта</h3>
+          </div>
 
           <div>
-
             <!-- Nav tabs -->
             <ul id="ttTabs" class="nav nav-tabs " role="tablist">
               <li role="presentation" class="active">
@@ -512,12 +512,315 @@
               </div>
 
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Section Extended-Type -->
+
+      <!-- End Section Manufacturer -->
+      <section id="extended-search-manufacturer" class="section-padding">
+        <div class="container">
+
+          <div class="block-title">
+            <h3>Производитель (Страна, Марка, Модель, Год)</h3>
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="enter-check-item">
+                <input type="text" placeholder="Введите страну">
+                <ul class="enter-check-item-list mCustomScrollbar" data-mcs-theme="dark-thick">
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-1" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-1">Выбрать все страны</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-2" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-2">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-3" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-3">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-4" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-4">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-5" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-5">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-6" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-6">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-7" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-7">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-country-8" name="manufacturer-check-country" value="">
+                      <label for="manufacturer-check-country-8">Германия</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="enter-check-item">
+                <input type="text" placeholder="Введите марку">
+                <ul class="enter-check-item-list mCustomScrollbar" data-mcs-theme="dark-thick">
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-1" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-1">Выбрать все марки</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <h6>Марки Германия</h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-2" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-2">Honda</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <h6>Марки Англия</h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-3" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-3">Toyota</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-4" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-4">Toyota</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-5" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-5">Toyota</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-mark-6" name="manufacturer-check-mark" value="">
+                      <label for="manufacturer-check-mark-6">Toyota</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="enter-check-item">
+                <input type="text" placeholder="Введите модель">
+                <ul class="enter-check-item-list mCustomScrollbar" data-mcs-theme="dark-thick">
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-1" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-1">Выбрать все модели</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <h6>Марки Германия</h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-2" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-2">Accord</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <h6>Марки Англия</h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-3" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-3">Corolla</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-4" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-4">Corolla</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-5" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-5">Corolla</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-model-6" name="manufacturer-check-model" value="">
+                      <label for="manufacturer-check-model-6">Corolla</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="enter-check-item">
+                <div class="enter-check-input-wrapper clearfix">
+                  <input type="text" placeholder="От">
+                  <input type="text" placeholder="До">
+                </div>
+                <ul class="enter-check-item-list mCustomScrollbar" data-mcs-theme="dark-thick">
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-1" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-1">Выбрать все года</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-2" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-2">1991</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-3" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-3">1992</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-4" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-4">1993</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-5" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-5">1994</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-6" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-6">1995</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-7" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-7">1996</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="check-item manufacturer-item">
+                      <input type="checkbox" id="manufacturer-check-year-8" name="manufacturer-check-year" value="">
+                      <label for="manufacturer-check-year-8">1997</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
 
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- End Section Extended-Type -->
+
+        </div>
+      </section>
+      <!-- End Section Manufacturer -->
+
+    </form>
 
     <!-- Footer -->
     <footer>
@@ -603,6 +906,8 @@
     <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
     <script src="/bower_components/wow/dist/wow.js"></script>
     <script src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js"></script>
+    <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

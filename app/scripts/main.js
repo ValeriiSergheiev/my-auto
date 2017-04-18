@@ -121,5 +121,58 @@ if (touch) { // remove all :hover stylesheets
 		$('.tt-content input').prop('checked', false);
 	});
 
+	//Select All checkbox
+	$('#manufacturer-check-country-1').click(function(event) {
+		if(this.checked) {
+			$("input[name='manufacturer-check-country']").each(function() {
+				this.checked = true;
+			});
+		}
+		else {
+			$("input[name='manufacturer-check-country']").each(function() {
+				this.checked = false;
+			});
+		}
+	});
+
+	$('#manufacturer-check-mark-1').click(function(event) {
+		if(this.checked) {
+			$("input[name='manufacturer-check-mark']").each(function() {
+				this.checked = true;
+			});
+		}
+		else {
+			$("input[name='manufacturer-check-mark']").each(function() {
+				this.checked = false;
+			});
+		}
+	});
+
+	$('#manufacturer-check-model-1').click(function(event) {
+		if(this.checked) {
+			$("input[name='manufacturer-check-model']").each(function() {
+				this.checked = true;
+			});
+		}
+		else {
+			$("input[name='manufacturer-check-model']").each(function() {
+				this.checked = false;
+			});
+		}
+	});
+
+	$('#manufacturer-check-year-1').click(function(event) {
+		if(this.checked) {
+			$("input[name='manufacturer-check-year']").each(function() {
+				this.checked = true;
+			});
+		}
+		else {
+			$("input[name='manufacturer-check-year']").each(function() {
+				this.checked = false;
+			});
+		}
+	});
+
 
 });

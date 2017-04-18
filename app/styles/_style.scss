@@ -926,7 +926,7 @@
 }
 
 /* *** Страница Расширенный поиск *** */
-//Section Extended-Type
+//Section Extended-Search-Type
 #extended-search-type {
 	background-color: $section-grey;
 }
@@ -989,4 +989,80 @@
 	.check {
 		top: 4px;
 	}
+}
+
+//Section Extended-Search-Manufacturer
+.enter-check-item {
+	background-color: $section-grey;
+	padding: 15px;
+	border: 1px solid #eeecec;
+	margin-top: 15px;
+	& > input {
+		width: 100%;
+		//line-height: 28px;
+		//height: 30px;
+		line-height: 1;
+		vertical-align: middle;
+		border: 1px solid $grey;
+		padding: 6px 10px;
+		font-size: 15px;
+		letter-spacing: .02em;
+		color: $text-grey;
+	}
+}
+
+.enter-check-input-wrapper {
+	input {
+		width: 45%;
+		line-height: 1;
+		vertical-align: middle;
+		border: 1px solid $grey;
+		padding: 6px 10px;
+		font-size: 15px;
+		letter-spacing: .02em;
+		color: $text-grey;
+		&:first-child {
+			float: left;
+		}
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+.enter-check-item-list {
+	margin-top: 20px;
+	max-height: 175px;
+	//overflow-y: auto;
+	li {
+		margin-top: 10px;
+		&:first-child {
+			label {
+				color: $text-grey-light;
+			}
+		}
+	}
+}
+
+.manufacturer-item {
+	label {
+		padding-left: 30px;
+		font-size: 18px;
+	}
+	.check {
+		top: 3px;
+	}
+	h6 {
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #ccc !important;
+	border-radius: 0;
+}
+
+.mCSB_scrollTools {
+	width: 6px;
 }
