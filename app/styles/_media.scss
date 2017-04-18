@@ -87,6 +87,12 @@
         }
     }
 
+    #ttTabs {
+        li {
+            width: calc(100% / 5);
+        }
+    }
+
 
 }
 
@@ -195,7 +201,19 @@
             }
         }
 
-        
+        #ttTabs {
+            li {
+                width: calc(100% / 3);
+                a {
+                    padding: 10px 0 5px;
+                    p {
+                        margin-top: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
 
     }
 
@@ -309,6 +327,27 @@
             }
             h5 {
                 text-align: center;
+            }
+        }
+
+        .tt-content {
+            padding: 10px;
+        }
+
+        .tb-item {
+            //margin-left: 10px;
+            margin-top: 5px;
+            label {
+                i {
+                    display: none;
+                }
+            }
+        }
+
+        .page-title {
+            padding: 20px 0 10px;
+            h2 {
+                font-size: 21px;
             }
         }
 

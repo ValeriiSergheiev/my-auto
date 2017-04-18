@@ -924,3 +924,69 @@
 		background-image: url('../images/label_quickly.png');
 	}
 }
+
+/* *** Страница Расширенный поиск *** */
+//Section Extended-Type
+#extended-search-type {
+	background-color: $section-grey;
+}
+
+#ttTabs {
+	border-bottom: 1px solid #eeecec;
+	margin-top: 10px;
+	li {
+		width: calc(100% / 9);
+		&.active > a {
+			border: 1px solid #eeecec;
+			border-bottom-color: transparent;
+		}
+		a {
+			display: block;
+			padding: 0;
+			border-radius: 0;
+			text-align: center;
+			padding: 25px 0 20px;
+			margin-right: 0;
+			i {
+				font-size: 40px;
+				color: $text-grey;
+			}
+			p {
+				margin-top: 25px;
+				font-size: 18px;
+			}
+			&:hover i {
+				color: $yellow;
+			}
+		}
+	}
+}
+
+.tt-content {
+	background-color: #fff;
+	border: 1px solid #eeecec;
+	border-top: none;
+	padding: 20px;
+}
+
+.tb-item {
+	margin-top: 25px;
+	//margin-left: 30px;
+	label {
+		font-size: 17px;
+		color: $text-grey;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		i {
+			color: $grey;
+			margin: 0 5px;
+			font-size: 24px;
+			vertical-align: top;
+			width: 89px;
+		}
+	}
+	.check {
+		top: 4px;
+	}
+}

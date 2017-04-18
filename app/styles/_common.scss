@@ -52,7 +52,7 @@ select, button {
 }
 
 .active-yellow {
-	color: $yellow;
+	color: $yellow !important;
 }
 
 .active-border-yellow {
@@ -84,6 +84,14 @@ select, button {
 	border: $border;
 }
 
+.page-title {
+	padding: 30px 0 10px;
+	h2 {
+		font-weight: 700;
+		font-size: 30px;
+	}
+}
+
 .section-title {
 	text-align: center;
 	margin-bottom: 35px;
@@ -94,6 +102,15 @@ select, button {
 		letter-spacing: .02em;
 		text-transform: uppercase;
 		margin: 0 10px;
+	}
+}
+
+.block-title {
+	text-align: center;
+	h3 {
+		color: $yellow;
+		font-weight: 700;
+		font-size: 25px;
 	}
 }
 

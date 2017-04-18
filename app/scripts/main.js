@@ -111,10 +111,15 @@ if (touch) { // remove all :hover stylesheets
 	});
 
 	//Tabs
-	$('#myTabs a').click(function (e) {
-		e.preventDefault()
-		$(this).tab('show')
-	})
+	$('#ttTabs li').click(function(event) {
+		$(this).find('i').addClass('active-yellow');
+		$(this).siblings().find('i').removeClass('active-yellow');
+	});
+
+	//Tabs checkbox reset
+	$('#ttTabs li a').click(function() {
+		$('.tt-content input').prop('checked', false);
+	});
 
 
 });

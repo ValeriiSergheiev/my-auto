@@ -117,29 +117,404 @@
     </div>
 
     <!-- Section Extended-Type -->
-    <section id="extended-type">
+    <section id="extended-search-type" class="section-padding">
       <div class="container">
 
-        <div>
-
-          <!-- Nav tabs -->
-          <ul id="myTabs" class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="home">111</div>
-            <div role="tabpanel" class="tab-pane fade" id="profile">222</div>
-            <div role="tabpanel" class="tab-pane fade" id="messages">333</div>
-            <div role="tabpanel" class="tab-pane fade" id="settings">444</div>
-          </div>
-
+        <div class="block-title">
+          <h3>Тип транспорта</h3>
         </div>
 
+        <form action="#" id="extended-search-form">
+
+          <div>
+
+            <!-- Nav tabs -->
+            <ul id="ttTabs" class="nav nav-tabs " role="tablist">
+              <li role="presentation" class="active">
+                <a href="#tt-1" aria-controls="home" role="tab" data-toggle="tab">
+                  <i class="icon-tt-1 active-yellow"></i>
+                  <p>Легковые</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-2" aria-controls="profile" role="tab" data-toggle="tab">
+                  <i class="icon-tt-2"></i>
+                  <p>Мото</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-3" aria-controls="messages" role="tab" data-toggle="tab">
+                  <i class="icon-tt-3"></i>
+                  <p>Спецтехника</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-4" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-4"></i>
+                  <p>Грузовики</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-5" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-5"></i>
+                  <p>Прицепы</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-6" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-6"></i>
+                  <p>Автобусы</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-7" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-7"></i>
+                  <p>Автодома</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-8" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-8"></i>
+                  <p>Водный</p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#tt-9" aria-controls="settings" role="tab" data-toggle="tab">
+                  <i class="icon-tt-9"></i>
+                  <p>Воздушный</p>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tt-content">
+
+              <div class="block-title">
+                <h3>Тип кузова</h3>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade in active" id="tt-1">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-1" name="tb-check-car" value="tb-check-car-1">
+                      <label for="tb-check-car-1"><i class="icon-tb-1"></i>Хэтчбек</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-2" name="tb-check-car" value="tb-check-car-2">
+                      <label for="tb-check-car-2"><i class="icon-tb-2"></i>Лифтбек</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-3" name="tb-check-car" value="tb-check-car-3">
+                      <label for="tb-check-car-3"><i class="icon-tb-3"></i>Лимузин</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-4" name="tb-check-car" value="tb-check-car-4">
+                      <label for="tb-check-car-4"><i class="icon-tb-4"></i>Пикап</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-5" name="tb-check-car" value="tb-check-car-5">
+                      <label for="tb-check-car-5"><i class="icon-tb-2"></i>Седан</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-6" name="tb-check-car" value="tb-check-car-6">
+                      <label for="tb-check-car-6" title="Внедорожник/кроссовер"><i class="icon-tb-6"></i>Внедорожник/Кроссовер</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-7" name="tb-check-car" value="tb-check-car-7">
+                      <label for="tb-check-car-7"><i class="icon-tb-7"></i>Кабриолет</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-8" name="tb-check-car" value="tb-check-car-8">
+                      <label for="tb-check-car-8"><i class="icon-tb-8"></i>Купе</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-9" name="tb-check-car" value="tb-check-car-9">
+                      <label for="tb-check-car-9" title="Легковой фургон"><i class="icon-tb-9"></i>Легковой фургон</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-10" name="tb-check-car" value="tb-check-car-10">
+                      <label for="tb-check-car-10"><i class="icon-tb-10"></i>Универсал</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-11" name="tb-check-car" value="tb-check-car-11">
+                      <label for="tb-check-car-11"><i class="icon-tb-11"></i>Минивэн</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-car-12" name="tb-check-car" value="tb-check-car-12">
+                      <label for="tb-check-car-12">Другой</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-2">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-moto-1" name="tb-check-moto" value="tb-check-moto-1">
+                      <label for="tb-check-moto-1">Moto 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-moto-2" name="tb-check-moto" value="tb-check-moto-2">
+                      <label for="tb-check-moto-2">Moto 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-moto-3" name="tb-check-moto" value="tb-check-moto-3">
+                      <label for="tb-check-moto-3">Moto 3</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-moto-4" name="tb-check-moto" value="tb-check-moto-4">
+                      <label for="tb-check-moto-4">Moto 4</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-3">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-spec-1" name="tb-check-spec" value="tb-check-spec-1">
+                      <label for="tb-check-spec-1">Special 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-spec-2" name="tb-check-spec" value="tb-check-spec-2">
+                      <label for="tb-check-spec-2">Special 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-spec-3" name="tb-check-spec" value="tb-check-spec-3">
+                      <label for="tb-check-spec-3">Special 3</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-spec-4" name="tb-check-spec" value="tb-check-spec-4">
+                      <label for="tb-check-spec-4">Special 4</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-4">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-truck-1" name="tb-check-truck" value="tb-check-truck-1">
+                      <label for="tb-check-truck-1">Truck 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-truck-2" name="tb-check-truck" value="tb-check-truck-2">
+                      <label for="tb-check-truck-2">Truck 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-5">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-trailer-1" name="tb-check-trailer" value="tb-check-trailer-1">
+                      <label for="tb-check-trailer-1">Trailer 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-trailer-2" name="tb-check-trailer" value="tb-check-trailer-2">
+                      <label for="tb-check-trailer-2">Trailer 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-6">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-bus-1" name="tb-check-bus" value="tb-check-bus-1">
+                      <label for="tb-check-bus-1">Bus 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-bus-2" name="tb-check-bus" value="tb-check-bus-2">
+                      <label for="tb-check-bus-2">Bus 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-7">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-house-1" name="tb-check-house" value="tb-check-house-1">
+                      <label for="tb-check-house-1">House 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-house-2" name="tb-check-house" value="tb-check-house-2">
+                      <label for="tb-check-house-2">House 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-8">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-water-1" name="tb-check-water" value="tb-check-water-1">
+                      <label for="tb-check-water-1">Water 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-water-2" name="tb-check-water" value="tb-check-water-2">
+                      <label for="tb-check-water-2">Water 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="tt-9">
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-air-1" name="tb-check-air" value="tb-check-air-1">
+                      <label for="tb-check-air-1">Air 1</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="check-item tb-item">
+                      <input type="checkbox" id="tb-check-air-2" name="tb-check-air" value="tb-check-air-2">
+                      <label for="tb-check-air-2">Air 2</label>
+                      <div class="check"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </form>
       </div>
     </section>
     <!-- End Section Extended-Type -->
@@ -245,7 +620,7 @@
     <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script> -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
