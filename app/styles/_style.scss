@@ -1066,3 +1066,167 @@
 .mCSB_scrollTools {
 	width: 6px;
 }
+
+//Section Cost
+.extended-search-price-wrapper {
+	max-width: 450px;
+	margin-top: 15px;
+}
+
+.extended-search-price {
+	& > li {
+		float: left;
+		margin: 0 13px 10px;
+		p {
+			font-size: 18px;
+			margin-top: 3px;
+		}
+		input {
+			width: 100px;
+			line-height: 1;
+			vertical-align: middle;
+			border: 1px solid $grey;
+			padding: 6px 10px;
+			font-size: 15px;
+			letter-spacing: .02em;
+			color: $text-grey-light;
+			&::placeholder {
+				color: $text-grey-light;
+				opacity: 1;
+				font-size: 15px;
+			}
+		}
+		.nice-select {
+			float: none;
+			width: 100px;
+			height: 29px;
+			line-height: 29px;
+			&::after {
+				right: 10px;
+				top: 59%;
+			}
+			span {
+				font-size: 15px;
+				color: $text-grey-light;
+			}
+			.list {
+				width: 100px;
+
+			}
+		}
+	}
+}
+
+.extended-search-price-check {
+	li {
+		margin-top: 10px;
+		&:first-child {
+			float: left;
+		}
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+//Section Region
+#extended-search-region {
+	background-color: $section-grey;
+}
+
+.extended-search-region-left {
+	float: left;
+	width: 50%;
+	.enter-check-item {
+		border: 0;
+		border-right: $border;
+		padding: 0 30px;
+		.enter-check-item-list li:first-child label {
+			color: inherit;
+		}
+	}
+}
+
+.extended-search-region-right {
+	float: right;
+	width: 50%;
+	.enter-check-item {
+		border: 0;
+		padding: 0 30px;
+		p {
+			text-align: center;
+			font-size: 14px;
+			color: $text-grey-light;
+			margin-top: 90px;
+		}
+	}
+}
+
+//Section State
+.search-state {
+	margin-bottom: 20px;
+	& > li {
+		display: block;
+		float: left;
+		width: 25%;
+		border-right: $border;
+		border-bottom: $border;
+		&:nth-child(4n) {
+			border-right: none;
+		}
+		&:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+			border-bottom: none;
+		}
+	}
+}
+
+.search-state-item {
+	padding: 20px;
+	h6 {
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+	ul li {
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.state-bottom-item {
+	margin-top: 5px;
+	margin-left: 40px;
+	label {
+		font-size: 13px;
+		color: $text-grey-light;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.check {
+		top: 0;
+	}
+}
+
+.state-select {
+	margin-top: 10px;
+	float: none;
+	width: 100%;
+	height: 29px;
+	line-height: 29px;
+	&::after {
+		right: 10px;
+	}
+	span.current {
+		font-size: 15px;
+	}
+	.list {
+		li {
+			display: block;
+		}
+	}
+}

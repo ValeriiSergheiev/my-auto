@@ -214,6 +214,42 @@
             }
         }
 
+        .extended-search-region-left {
+            float: none;
+            width: 100%;
+            .enter-check-item {
+                border: none;
+            }
+        }
+
+        .extended-search-region-right {
+            float: none;
+            width: 100%;
+            margin-top: 15px;
+            border-top: $border;
+            .enter-check-item {
+                p {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .search-state {
+            & > li {
+                width: 50%;
+                &:nth-child(2n) {
+                    border-right: none;
+                }
+                &:nth-child(5), &:nth-child(6) {
+                    border-bottom: $border;
+                }
+            }
+        }
+
+        .state-bottom-item {
+            margin-left: 0;
+        }
+
 
     }
 
@@ -348,6 +384,31 @@
             padding: 20px 0 10px;
             h2 {
                 font-size: 21px;
+            }
+        }
+
+        .extended-search-price {
+            li {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        .extended-search-price-check {
+            li {
+                float: none !important;
+            }
+        }
+
+        .search-state {
+            & > li {
+                width: 100%;
+                border-right: none;
+                border-bottom: $border !important;
+                &:last-child {
+                    border-bottom: none !important;
+                }
             }
         }
 

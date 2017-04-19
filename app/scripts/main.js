@@ -59,7 +59,7 @@ if (touch) { // remove all :hover stylesheets
 	});
 
 	//Select menu
-	$('.common-filter select, .catalog-filter select, .sort-by-price').niceSelect();
+	$('.common-filter select, .catalog-filter select, .sort-by-price, .nice-select-common').niceSelect();
 
 	//ScrollTop button
 	$(window).scroll(function(){
