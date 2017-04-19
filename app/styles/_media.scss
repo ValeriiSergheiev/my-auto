@@ -30,6 +30,16 @@
         }
     }
 
+    .extended-search-bottom-security {
+        height: auto;
+    }
+
+    .extended-search-bottom-comfort {
+        ul li {
+            width: 250px;
+        }
+    }
+
 
 }
 
@@ -250,6 +260,19 @@
             margin-left: 0;
         }
 
+        .tth-left {
+            float: none;
+            width: 100%;
+        }
+
+        .tth-right {
+            float: none;
+            width: 100%;
+            border-left: none;
+            border-top: $border;
+            padding-top: 25px;
+        }
+
 
     }
 
@@ -391,6 +414,14 @@
             li {
                 &:first-child {
                     display: none;
+                }
+            }
+        }
+
+        .extended-search-tth {
+            li {
+                &:first-child {
+                    display: block;
                 }
             }
         }
