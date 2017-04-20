@@ -1333,30 +1333,33 @@
 	height: auto;
 }
 
-.btn-group {
+.form-btn-submit {
 	width: 400px;
 	padding: 40px 0;
-	a:first-child {
-		float: left;
-		padding: 0 70px;
-		@include buttons ($yellow, '', 20px, 40px);
-		&:hover {
-			@include buttons-hover ($green, 40px);
+	input {
+		border: none;
+		&[type="submit"] {
+			float: left;
+			padding: 0 70px;
+			@include buttons ($yellow, '', 20px, 40px);
+			&:hover {
+				@include buttons-hover ($green, 40px);
+			}
 		}
-	}
-	a:last-child {
-		float: right;
-		display: inline-block;
-		//position: relative;
-		font-size: 18px;
-		color: #7f7f7f;
-		letter-spacing: .02em;
-		border-bottom: 1px dashed #7f7f7f;
-		transition: all ease 0.3s;
-		padding-top: 7px;
-		&:hover {
-			color: $yellow;
-			border-color: $yellow;
+		&[type="reset"] {
+			float: right;
+			display: inline-block;
+			font-size: 18px;
+			color: #7f7f7f;
+			letter-spacing: .02em;
+			border-bottom: 1px dashed #7f7f7f;
+			transition: all ease 0.3s;
+			padding-top: 7px;
+			background-color: transparent;
+			&:hover {
+				color: $yellow;
+				border-color: $yellow;
+			}
 		}
 	}
 }

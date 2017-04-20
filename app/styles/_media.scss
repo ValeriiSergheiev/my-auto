@@ -443,9 +443,9 @@
             }
         }
 
-        .btn-group {
+        .form-btn-submit {
             width: 290px;
-            a:first-child {
+            input[type="submit"] {
                 padding: 0 20px;
             }
         }
