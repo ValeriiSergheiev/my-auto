@@ -1268,10 +1268,10 @@
 	h6 {
 		font-size: 18px;
 		font-weight: bold;
-		margin-bottom: 5px;
+		margin-bottom: 3px;
 	}
 	& > div {
-		margin-bottom: 10px;
+		//margin-bottom: 10px;
 	}
 }
 
@@ -1320,5 +1320,43 @@
 	ul li {
 		width: 170px;
 
+	}
+}
+
+.extended-search-bottom-multimedia {
+	@extend .extended-search-bottom-security;
+	height: auto;
+}
+
+.extended-search-bottom-other {
+	@extend .extended-search-bottom-security;
+	height: auto;
+}
+
+.btn-group {
+	width: 400px;
+	padding: 40px 0;
+	a:first-child {
+		float: left;
+		padding: 0 70px;
+		@include buttons ($yellow, '', 20px, 40px);
+		&:hover {
+			@include buttons-hover ($green, 40px);
+		}
+	}
+	a:last-child {
+		float: right;
+		display: inline-block;
+		//position: relative;
+		font-size: 18px;
+		color: #7f7f7f;
+		letter-spacing: .02em;
+		border-bottom: 1px dashed #7f7f7f;
+		transition: all ease 0.3s;
+		padding-top: 7px;
+		&:hover {
+			color: $yellow;
+			border-color: $yellow;
+		}
 	}
 }
