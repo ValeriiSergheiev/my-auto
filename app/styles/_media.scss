@@ -40,6 +40,19 @@
         }
     }
 
+    .account-sidebar-btns {
+        a {
+            background-position: 5px center;
+        }
+    }
+
+    .ad-type-left {
+        padding-left: 20px;
+        h6 {
+            margin-left: 0;
+        }
+    }
+
 
 }
 
@@ -100,6 +113,31 @@
     #ttTabs {
         li {
             width: calc(100% / 5);
+        }
+    }
+
+    .account-sidebar-btns {
+        a {
+            background-position: 10px center;
+        }
+    }
+
+    .ad-type-left {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+
+    .ad-type-right {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .search-place {
+        & > div {
+            float: none !important;
         }
     }
 
@@ -271,6 +309,10 @@
             border-left: none;
             border-top: $border;
             padding-top: 25px;
+        }
+
+        .my-account-btn {
+            margin-bottom: 10px;
         }
 
 

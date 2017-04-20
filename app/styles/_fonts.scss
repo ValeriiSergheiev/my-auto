@@ -3,21 +3,21 @@
 	src: url('../fonts/calibri.ttf');
 }
 
-// Icon Transport (Catalog extended)
+// Icons
 @font-face {
-  font-family: 'icomoon-car-icons';
-  src:  url('../fonts/icomoon-car-icons.eot?legt6o');
-  src:  url('../fonts/icomoon-car-icons.eot?legt6o#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon-car-icons.ttf?legt6o') format('truetype'),
-    url('../fonts/icomoon-car-icons.woff?legt6o') format('woff'),
-    url('../fonts/icomoon-car-icons.svg?legt6o#icomoon-car-icons') format('svg');
+  font-family: 'icomoon-icons';
+  src:  url('../fonts/icomoon-icons.eot?7dihyu');
+  src:  url('../fonts/icomoon-icons.eot?7dihyu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-icons.ttf?7dihyu') format('truetype'),
+    url('../fonts/icomoon-icons.woff?7dihyu') format('woff'),
+    url('../fonts/icomoon-icons.svg?7dihyu#icomoon-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon-car-icons' !important;
+  font-family: 'icomoon-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -30,6 +30,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-acc-1:before {
+  content: "\e914";
+}
+.icon-acc-2:before {
+  content: "\e915";
+}
+.icon-acc-3:before {
+  content: "\e916";
+}
+.icon-acc-4:before {
+  content: "\e917";
+}
+.icon-acc-5:before {
+  content: "\e918";
+}
+.icon-acc-6:before {
+  content: "\e919";
+}
 .icon-tb-1:before {
   content: "\e900";
 }

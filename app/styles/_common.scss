@@ -69,6 +69,11 @@ select, button {
 	box-shadow: none !important;
 }
 
+.account-menu-active {
+	background-color: $green-light;
+	color: $black !important;
+}
+
 .section-padding {
 	padding: 20px 0;
 }

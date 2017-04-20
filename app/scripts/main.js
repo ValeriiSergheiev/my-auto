@@ -33,6 +33,11 @@ if (touch) { // remove all :hover stylesheets
 		$(this).addClass('menu-active').siblings().removeClass('menu-active');
 	});
 
+	$('.account-sidebar-menu li').click(function() {
+		$(this).find('a').addClass('account-menu-active');
+		$(this).siblings().find('a').removeClass('account-menu-active');
+	});
+
 	$('.color-select li').click(function() {
 		//$(this).addClass('color-select-active').siblings().removeClass('color-select-active');
 		$(this).toggleClass('color-select-active');
@@ -172,6 +177,12 @@ if (touch) { // remove all :hover stylesheets
 				this.checked = false;
 			});
 		}
+	});
+
+	//Tooltip
+	$('.tooltip-link').tooltip();
+	$('.tooltip-link').click(function(event) {
+		event.preventDefault();
 	});
 
 
