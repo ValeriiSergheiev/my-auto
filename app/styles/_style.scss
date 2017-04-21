@@ -1709,3 +1709,110 @@ p.not-published {
 	@extend p.published;
 	color: $red;
 }
+
+#my-sto-form {
+	max-width: 520px;
+	label {
+		@include clearfix;
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 17px;
+		font-weight: normal;
+		line-height: 35px;
+		span {
+			color: $yellow;
+		}
+		input, textarea {
+			float: right;
+			height: 35px;
+			width: 290px;
+			border-radius: 0;
+			border: $border;
+			background-color: $section-grey;
+			line-height: 1.2;
+			font-size: 14px;
+			padding: 5px 10px;
+			box-sizing: border-box;
+		}
+		input[type="file"] {
+			padding: 0;
+			background-color: transparent;
+			border: none;
+		}
+		textarea {
+			width: 290px !important;
+			height: 95px;
+			resize: none;
+		}
+	}
+	.add-field {
+		text-align: right;
+		margin-bottom: 10px;
+		margin-right: 123px;
+		a {
+			display: inline-block;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: $yellow;
+			img {
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+	p {
+		font-size: 17px;
+		color: $text-grey;
+		text-align: center;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+	.common-filter {
+		p {
+			display: inline-block;
+			font-size: 17px;
+			font-weight: normal;
+			line-height: 35px;
+			color: inherit;
+			margin-bottom: 0;
+			span {
+				color: $yellow;
+			}
+		}
+		.nice-select {
+			height: 35px;
+			line-height: 35px;
+			border: $border;
+			background-color: $section-grey;
+			width: 290px;
+			.list {
+				width: 290px;
+				border: $border;
+			}
+			& > span {
+				font-size: 17px;
+				color: $black;
+			}
+			&::after {
+				right: 12px;
+			}
+		}
+	}
+	input[type="submit"] {
+		@include buttons ($yellow, '../images/plus-btn.png', 17px, 45px);
+		display: block;
+		width: 170px;
+		margin: 0 auto;
+		margin-top: 20px;
+		border: none;
+		font-weight: normal;
+		text-transform: uppercase;
+		background-position: 10px center;
+		&:hover {
+			@include buttons-hover ($green, 45px);
+		}
+	}
+}

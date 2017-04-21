@@ -185,5 +185,12 @@ if (touch) { // remove all :hover stylesheets
 		event.preventDefault();
 	});
 
+	//Add fields
+	$('.add-field a').click(function(event) {
+		event.preventDefault();
+		$('.clone-field').clone().val(54654).insertBefore('.add-field').removeClass('clone-field').addClass('mobile-new');
+		$('.mobile-new input').val('');
+	});
+
 
 });
