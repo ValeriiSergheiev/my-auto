@@ -212,4 +212,13 @@ select, button {
 .icon-photo {
 	@include sprite($photo);
 }
+.icon-mail {
+	@include sprite($mail);
+}
+.icon-eye {
+	@include sprite($eye);
+}
+.icon-photo-yellow {
+	@include sprite($photo-yellow);
+}
 //End Sprites

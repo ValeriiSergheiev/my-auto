@@ -53,6 +53,22 @@
         }
     }
 
+    .my-ad-block-common-top {
+        & > ul > li {
+            margin: 10px 0; 
+            &:last-child {
+                float: left;
+            }
+        }
+    }
+
+    .select-compact {
+        & > span {
+            font-size: 16px;
+            padding-top: 4px;
+        }
+    }
+
 
 }
 
@@ -138,6 +154,28 @@
     .search-place {
         & > div {
             float: none !important;
+        }
+    }
+
+    .select-compact {
+        & > span {
+            font-size: 16px;
+            padding-top: 4px;
+        }
+    }
+
+    .my-ad-compact-content-right {
+        ul {
+            margin-top: 35px;
+        }
+        .btn-group {
+            position: static;
+            a {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -315,6 +353,20 @@
             margin-bottom: 10px;
         }
 
+        .my-ad-block-common-top {
+            & > ul > li {
+                //float: left;
+            }
+            .common-filter {
+                width: auto;
+                margin-left: auto;
+                margin-right: 30px;
+                .nice-select {
+                    float: right;
+                }
+            }
+        }
+
 
     }
 
@@ -489,6 +541,25 @@
             width: 290px;
             input[type="submit"] {
                 padding: 0 20px;
+            }
+        }
+
+        .my-ad-block-common-top {
+            .nice-select {
+                float: none !important;
+            }
+        }
+
+        .my-ad-compact-content-left {
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .my-ad-compact-content-right {
+            text-align: center;
+            ul {
+                margin-top: 0;
             }
         }
 
