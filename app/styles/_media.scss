@@ -69,6 +69,19 @@
         }
     }
 
+    #my-archive-main {
+        .my-ad-compact-content-right {
+            ul::before {
+                border-top: none;
+            }
+        }
+        .btn-group {
+            position: static;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
 
 }
 
@@ -179,7 +192,7 @@
         }
     }
 
-
+    
 }
 
     /* Small Devices, Tablets */
@@ -375,6 +388,24 @@
                     float: right;
                     width: 100%;
                 }
+            }
+        }
+
+        .section-title {
+            margin-bottom: 0;
+        }
+
+        #my-data-form {
+            //@extend #my-sto-form;
+            .my-data-check-list li {
+                float: none;
+                margin-top: 10px;
+                label {
+                    margin-bottom: 0;
+                }
+            }
+            .check-item {
+                width: 100%;
             }
         }
 
@@ -590,6 +621,12 @@
             .add-field {
                 margin-right: 0;
                 text-align: left;
+            }
+        }
+
+        #my-archive-main {
+            .btn-group a {
+                margin: 2px;
             }
         }
 

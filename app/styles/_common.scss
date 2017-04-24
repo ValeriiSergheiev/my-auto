@@ -224,4 +224,10 @@ select, button, input {
 .icon-photo-yellow {
 	@include sprite($photo-yellow);
 }
+.icon-clock {
+	@include sprite($clock);
+}
+.icon-exit {
+	@include sprite($exit);
+}
 //End Sprites
