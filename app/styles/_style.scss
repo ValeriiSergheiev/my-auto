@@ -2097,3 +2097,80 @@ a.sto-search-main-btn {
 		@include buttons-hover ($green, 35px);
 	}
 }
+
+//STO Search Popup Form
+.sto-search-popup {
+	.section-title {
+		margin-bottom: 15px;
+		h2 {
+			text-transform: none;
+		}
+	}
+	background-image: url('../images/form-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	input[type="submit"] {
+		@include buttons ($yellow, '', 15px, 40px);
+		display: block;
+		border: none;
+		text-align: center;
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		font-weight: normal;
+		letter-spacing: .02em;
+		&:hover {
+			@include buttons-hover ($green, 40px);
+		}
+	}
+}
+
+.popup-form-container {
+	max-width: 530px;
+	color: $text-grey;
+	label {
+		display: block;
+		float: left;
+		width: calc(530px / 3 - 7px);
+		margin-right: 10px;
+		font-size: 15px;
+		font-weight: normal;
+		span {
+			color: $yellow;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		& > input {
+			display: block;
+			border: 1px solid #c7c7c7;
+			width: 100%;
+			height: 40px;
+			padding: 0 5px;
+			background-color: #ededed;
+			opacity: .8;
+		}
+	}
+	& + label {
+		display: block;
+		max-width: 530px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: normal;
+		color: $text-grey;
+		textarea {
+			width: 100%;
+			height: 80px;
+			display: block;
+			resize: none;
+			border: 1px solid #c7c7c7;
+			background-color: #ededed;
+			opacity: .8;
+			line-height: 1.2;
+			padding: 5px;
+		}
+	}
+}

@@ -450,6 +450,22 @@
         margin-right: auto;
     }
 
+    .sto-search-popup {
+        label {
+            width: 270px;
+        }
+    }
+
+    .popup-form-container {
+        width: 270px;
+        label {
+            float: none;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+
 
 }
 

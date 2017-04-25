@@ -192,5 +192,12 @@ if (touch) { // remove all :hover stylesheets
 		$('.mobile-new input').val('');
 	});
 
+	//Magnific Popup
+	$('.open-popup-link').magnificPopup({
+		type:'inline',
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
 
 });
