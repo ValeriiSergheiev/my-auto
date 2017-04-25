@@ -395,12 +395,18 @@
         }
 
         #my-sto-form {
+            .section-title {
+                margin-bottom: 20px;
+            }
             .common-filter {
                 margin-bottom: 10px;
                 width: 100%;
                 .nice-select {
                     float: right;
                     width: 100%;
+                    .list {
+                        width: calc(100% + 2px);
+                    }
                 }
             }
         }
@@ -619,6 +625,9 @@
         }
 
         #my-sto-form {
+            .section-title {
+                margin-bottom: 0;
+            }
             label {
                 input, textarea {
                     display: block;

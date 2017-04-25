@@ -1719,6 +1719,10 @@ p.not-published {
 
 #my-sto-form {
 	max-width: 520px;
+	.section-title {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
 	label {
 		@include clearfix;
 		width: 100%;
@@ -1826,7 +1830,6 @@ p.not-published {
 
 /* *** Страница АРХИВ *** */
 #my-archive-main {
-	//min-height: 100vh;
 	.my-ad-block-common {
 		border-bottom: $border;
 	}
@@ -1973,4 +1976,15 @@ p.not-published {
 			}
 		}
 	}
+}
+
+/* *** Страница МОИ АВТОРАЗБОРКИ *** */
+#my-razborka-main {
+	.section-title h2 {
+		text-transform: none;
+	}
+}
+
+#my-razborka-form {
+	@extend #my-sto-form;
 }
