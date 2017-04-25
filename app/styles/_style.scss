@@ -1988,3 +1988,112 @@ p.not-published {
 #my-razborka-form {
 	@extend #my-sto-form;
 }
+
+/* *** Поиск СТО *** */
+#sto-search {
+	.page-title {
+		padding: 0;
+		margin: 20px 0;
+		h2 {
+			float: left;
+			line-height: 40px;
+		}
+		a {
+			float: right;
+			@include buttons ($yellow, '../images/plus-btn.png', 18px, 40px);
+			width: 200px;
+			text-align: center;
+			background-position: 15px center;
+			font-weight: normal;
+			&:hover {
+				@include buttons-hover ($green, 40px);
+			}
+		}
+	}
+}
+
+#sto-search-form {
+	padding: 20px 10px;
+	background-color: $section-grey;
+}
+
+.sto-search-form-select-item {
+	max-width: 290px;
+	margin-left: auto;
+	margin-right: auto;
+	& > span {
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: .02em;
+	}
+	.nice-select {
+		width: 100%;
+		float: none;
+		span.current {
+			font-size: 16px;
+		}
+		.option {
+			font-size: 16px;
+		}
+		.list {
+			width: calc(100% + 2px);
+		}
+	}
+	input[type="submit"] {
+		@include buttons ($green, '', 20px, 42px);
+		width: 100%;
+		border: none;
+		margin-top: 26px;
+		font-weight: normal;
+		&:hover {
+			@include buttons-hover ($yellow, 42px);
+		}
+	}
+}
+
+.sto-search-main-content {
+	padding: 20px 10px;
+	margin-top: 20px;
+}
+
+.sto-search-main-item {
+	.block-title {
+		text-align: left;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 14px;
+		letter-spacing: .02em;
+	}
+	ul {
+		margin: 15px 0;
+		li {
+			font-weight: bold;
+			color: $text-grey-light;
+			font-size: 16px;
+			margin-top: 5px;
+			i {
+				margin-right: 5px;
+				vertical-align: baseline;
+			}
+			span {
+				color: $black;
+				font-weight: normal;
+			}
+		}
+	}
+	img {
+		float: right;
+	}
+}
+
+a.sto-search-main-btn {
+	@include buttons ($yellow, '../images/sms.png', 16px, 35px);
+	width: 210px;
+	text-align: center;
+	font-weight: normal;
+	background-position: 10px center;
+	&:hover {
+		@include buttons-hover ($green, 35px);
+	}
+}

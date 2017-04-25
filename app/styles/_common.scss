@@ -230,4 +230,19 @@ select, button, input {
 .icon-exit {
 	@include sprite($exit);
 }
+.icon-geo-grey {
+	@include sprite($geo-grey);
+}
+.icon-tel-grey {
+	@include sprite($tel-grey);
+}
+.icon-mail-grey {
+	@include sprite($mail-grey);
+}
+.icon-www-grey {
+	@include sprite($www-grey);
+}
+.icon-car-grey {
+	@include sprite($car-grey);
+}
 //End Sprites

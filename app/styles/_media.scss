@@ -428,6 +428,28 @@
         }
     }
 
+    .sto-search-form-select-item {
+        margin-bottom: 10px;
+    }
+
+    .sto-search-main-item {
+        .block-title {
+            text-align: center;
+        }
+        img {
+            float: none;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    a.sto-search-main-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 }
 
@@ -490,6 +512,7 @@
                 }
                 &:last-child {
                     padding: 0 10px;
+                    background-image: url('');
                 }
             }
         }
@@ -656,6 +679,18 @@
             max-width: 270px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #sto-search {
+            .page-title {
+                text-align: center;
+                h2 {
+                    float: none;
+                }
+                a {
+                    float: none;
+                }
+            }
         }
 
     }
