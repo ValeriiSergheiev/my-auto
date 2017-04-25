@@ -42,7 +42,11 @@
 
     .account-sidebar-btns {
         a {
-            background-position: 5px center;
+            background-position: 6px center;
+            font-size: 14px;
+            &:first-child {
+                font-size: 14px;
+            }
         }
     }
 
@@ -79,6 +83,16 @@
             position: static;
             width: 100%;
             margin-top: 10px;
+        }
+    }
+
+    #my-ad-main {
+        .my-ad-block-common-top > ul > li {
+            margin: 0;
+            p {
+                margin-top: 0;
+                margin-bottom: 7px;
+            }
         }
     }
 
@@ -396,21 +410,20 @@
         }
 
         #my-data-form {
-            //@extend #my-sto-form;
-            .my-data-check-list li {
-                float: none;
-                margin-top: 10px;
-                label {
-                    margin-bottom: 0;
-                }
-            }
-            .check-item {
-                width: 100%;
+         .my-data-check-list li {
+            float: none;
+            margin-top: 10px;
+            label {
+                margin-bottom: 0;
             }
         }
-
-
+        .check-item {
+            width: 100%;
+        }
     }
+
+
+}
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
@@ -628,6 +641,12 @@
             .btn-group a {
                 margin: 2px;
             }
+        }
+
+        .btn-group {
+            max-width: 270px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
     }

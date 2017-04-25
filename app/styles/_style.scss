@@ -1407,23 +1407,21 @@
 	margin-top: 20px;
 	margin-bottom: 40px;
 	a {
-		@include buttons ($green, '../images/plus-btn.png', 15px, 50px);
+		@include buttons ($green, '../images/plus-btn.png', 16px, 45px);
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 14px;
 		width: 100%;
 		margin-top: 10px;
 		font-weight: normal;
-		background-position: 25px center;
+		background-position: 15px center;
 		&:hover {
-			@include buttons-hover ($yellow, 50px);
+			@include buttons-hover ($yellow, 45px);
 		}
 		&:first-child {
-			@include buttons ($yellow, '../images/plus-btn.png', 15px, 50px);
-			font-size: 14px;
+			@include buttons ($yellow, '../images/plus-btn.png', 16px, 45px);
 			font-weight: normal;
 			&:hover {
-				@include buttons-hover ($green, 50px);
+				@include buttons-hover ($green, 45px);
 			}
 		}
 	}
@@ -1570,6 +1568,15 @@
 		}
 		&:last-child {
 			float: right;
+		}
+		p {
+			font-size: 18px;
+			margin-top: 6px;
+			//display: inline-block;
+			line-height: 1.1;
+			/*text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;*/
 		}
 	}	
 }
@@ -1906,6 +1913,64 @@ p.not-published {
 		}
 		.check {
 			top: 1px;
+		}
+	}
+}
+
+/* ***  Страница МОИ ПЛАТЕЖИ *** */
+#my-payments {
+	.section-title h2 {
+		text-transform: none;
+	}
+}
+
+.my-payments-table {
+	text-align: center;
+	font-size: 15px;
+	white-space: nowrap;
+	.table-bordered > thead > tr > th {
+		border-bottom-width: 1px;
+		vertical-align: middle;
+		text-align: center;
+		font-weight: normal;
+		background-color: $section-grey;
+	}
+	.table > tbody > tr > td {
+		vertical-align: middle;
+	}
+	.table-img {
+		overflow: hidden;
+		img {
+			width: 220px;
+			height: 130px;
+		}
+	}
+}
+
+/* *** Страница МОИ ОБЪЯВЛЕНИЯ *** */
+#my-ad-main {
+	.section-title h2 {
+		text-transform: none;
+	}
+	@extend #my-archive-main;
+	.my-ad-compact-content-right ul::before {
+		width: 280px;
+	}
+	.pay-box a {
+		width: 270px;
+		font-size: 16px;
+	}
+	.btn-group {
+		right: -3px;
+		top: 24px;
+		a {
+			&:nth-child(3), &:nth-child(4) {
+				@include buttons ($btn-grey, '', 18px, 30px);
+				font-weight: normal;
+			}
+			&:hover {
+				@include buttons-hover ($yellow, 30px);
+			}
 		}
 	}
 }
