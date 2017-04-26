@@ -96,6 +96,52 @@
         }
     }
 
+    #login-registration {
+        background-size: cover;
+        background-position: 50% 34%;
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .login-section {
+        border-right: none;
+    }
+
+    #login-form {
+        padding-left: 0;
+        & > label {
+            display: block;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5px;
+            input {
+                display: block;
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .registration-form-check-list {
+        margin-left: 0;
+    }
+
+    .resistration-form-select {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            float: none;
+            text-align: left;
+        }
+        .resistration-form-select-wrapper {
+         width: 100%;
+     }
+ }
+
 
 }
 
@@ -464,6 +510,11 @@
             margin-bottom: 10px;
             margin-right: 0;
         }
+    }
+
+    .login-section {
+        padding: 15px 0;
+        margin: 0;
     }
 
 

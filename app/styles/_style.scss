@@ -2174,3 +2174,149 @@ a.sto-search-main-btn {
 		}
 	}
 }
+
+/* *** Страница ВХОД/РЕГИСТРАЦИЯ *** */
+#login-registration {
+	background-image: url('../images/registration-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 65%;
+	background-position: left bottom;
+	h4 {
+		font-weight: bold;
+		font-size: 19px;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 20px;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.login-section {
+	padding: 25px 0 100px;
+	border-right: $border;
+	margin-right: -15px;
+	//background-color: yellow;
+}
+
+#login-form {
+	& > label {
+		@include clearfix;
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 17px;
+		font-weight: normal;
+		line-height: 40px;
+		span {
+			color: $yellow;
+		}
+		input {
+			display: block;
+			float: right;
+			border: $border;
+			border-radius: 0;
+			width: 300px;
+			background-color: $section-grey;
+			padding: 0 10px;
+			margin-right: 84px;
+		}
+	}
+	& > input[type="submit"] {
+		@include buttons ($yellow, '', 17px, 40px);
+		display: block;
+		width: 170px;
+		border: none;
+		font-weight: normal;
+		letter-spacing: .02em;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		&:hover {
+			@include buttons-hover ($green, 40px);
+		}
+	}
+	& > div {
+		text-align: center;
+		a {
+			display: inline-block;
+			font-size: 15px;
+			font-weight: bold;
+			margin-top: 5px;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}
+
+.registration-section {
+	padding-top: 25px;
+	h4 {
+		margin-bottom: 20px;
+	}
+}
+
+#registration-form {
+	padding-left: 80px;
+	@extend #login-form;
+	label {
+		input {
+			margin-right: 0;
+		}
+	}
+	p:last-child {
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		margin: 10px 0;
+		a {
+			color: $green;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+}
+
+.resistration-form-select {
+	margin-bottom: 10px;
+	p {
+		float: left;
+		font-size: 17px;
+		font-weight: normal;
+		line-height: 40px;
+		span {
+			color: $yellow;
+		}
+	}
+	.resistration-form-select-wrapper {
+		float: right;
+		width: 300px;
+	}
+	.nice-select {
+		float: none;
+		width: 100%;
+		border: $border;
+		background-color: $section-grey;
+		span.current {
+			font-size: 17px;
+			color: $black;
+		}
+	}
+}
+
+.registration-form-check-list {
+	margin-left: 176px;
+	li {
+		margin-bottom: 10px;
+	}
+	.check-item {
+		label {
+			line-height: 1.2;
+		}
+		.check {
+			top: 0px;
+		}
+	}
+}
