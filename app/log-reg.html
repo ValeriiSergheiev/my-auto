@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Auto</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.css" />
+  <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Header -->
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-xs-4">
+                <div class="logo">
+                  <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-8 col-xs-8">
+                <div class="header-top-info">
+                  <div class="header-top-info-line-1 clearfix">
+                    <a href="#">проверить продавца</a><span>|</span>
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a><span>|</span>
+                    <ul class="lang">
+                      <li class="active-yellow"><a  href="#">рус</a><span>|</span></li>
+                      <li><a href="#">укр</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="header-top-info-line-2">
+                   <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-user fa-stack-1x"></i>
+                    </span>
+                    вход
+                  </a>
+
+                  <a href="#">продать авто</a>
+                </div>
+
+                <div class="header-top-info-line-3">
+                  <p>За сегодня: <span>1400</span></p>
+                  <p>Всего авто: <span>450000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom clearfix">
+        <div class="container">
+
+          <div class="menu-search">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+
+          <ul class="menu">
+            <li class="menu-active"><a href="#">главная</a></li>
+            <li><a href="#">расширенный поиск авто</a></li>
+            <li><a href="#">авторазборки</a></li>
+            <li><a href="#">сто</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">полезная информация</a></li>
+          </ul>
+          
+          <div class="mob-menu-btn">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="login-registration" class="section-padding">
+      <div class="container">
+        <h4>Для того чтобы подать объявление и быстро продать авто Вам необходимо: Войти в личный кабинет или Зарегистрироваться</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <section class="login-section">
+              <h4>Войти в личный кабинет</h4>
+              <form action="#" id="login-form">
+                <label>Email <span>*</span><input type="email" required></label>
+                <label>Пароль <span>*</span><input type="password" required></label>
+                <input type="submit" value="Войти">
+                <div>
+                  <a href="#">Забыли пароль?</a>
+                </div>
+              </form>
+            </section>
+          </div>
+
+          <div class="col-sm-6">
+            <section class="registration-section">
+              <h4>Регистрация</h4>
+              <form action="#" id="registration-form" class="center-block">
+                <label>Email <span>*</span><input type="email" required></label>
+                <label>Пароль <span>*</span><input type="password" required></label>
+                <label>Повторить пароль <span>*</span><input type="password" required></label>
+                <label>Имя <span>*</span><input type="text" required></label>
+                <label>Телефон <span>*</span><input type="tel" required></label>
+                <div class="resistration-form-select clearfix">
+                  <p>Область <span>*</span></p>
+                  <div class="resistration-form-select-wrapper">
+                    <select name="" id="" class="nice-select-common">
+                      <option data-display=""></option>
+                      <option value="1">Область 1</option>
+                      <option value="2">Область 2</option>
+                      <option value="3">Область 3</option>
+                      <option value="4">Область 4</option>
+                      <option value="5">Область 5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="resistration-form-select clearfix">
+                  <p>Город <span>*</span></p>
+                  <div class="resistration-form-select-wrapper">
+                    <select name="" id="" class="nice-select-common">
+                      <option data-display=""></option>
+                      <option value="1">Город 1</option>
+                      <option value="2">Город 2</option>
+                      <option value="3">Город 3</option>
+                      <option value="4">Город 4</option>
+                      <option value="5">Город 5</option>
+                    </select>
+                  </div>
+                </div>
+                <ul class="registration-form-check-list clearfix">
+                  <li>
+                    <div class="check-item">
+                      <input type="checkbox" id="registration-form-check-1" name="registration-form-check" value="">
+                      <label for="registration-form-check-1">Разрешить контактировать со мной через email</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-item">
+                      <input type="checkbox" id="registration-form-check-2" name="registration-form-check" value="">
+                      <label for="registration-form-check-2">Получать рассылки про обновления, акции, конкурсы</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="check-item">
+                      <input type="checkbox" id="registration-form-check-3" name="registration-form-check" value="">
+                      <label for="registration-form-check-3">Я принимаю условия изложенные в “Соглашении о услуг” и “Политике конфиденциальностии”</label>
+                      <div class="check"></div>
+                    </div>
+                  </li>
+                </ul>
+                
+                <input type="submit" value="Зарегистрироваться">
+                <p>Уже регистрировались? <a href="#">Войдите</a></p>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-3">
+            <ul class="footer-nav">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Расширенный поиск авто</a></li>
+              <li><a href="#">Авторазборки</a></li>
+              <li><a href="#">СТО</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Проверить продавца</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <ul class="footer-nav">
+              <li><a href="#">Полезная информация</a></li>
+              <li><a href="#">Помощь по сайту</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Поиск авто по марке и модели</a></li>
+              <li><a href="#">Поиск авто по области и городу</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <div class="hotline">
+              <p>Телефон горячей линии</p>
+              <p>0634462061</p>
+              <div class="sell-auto">
+                <a href="#">
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-plus fa-stack-1x"></i>
+                  </span>
+                  продать авто
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <ul class="socials">
+              <li><a href="#"><i class="icon icon-fb"></i></a></li>
+              <li><a href="#"><i class="icon icon-yt"></i></a></li>
+              <li><a href="#"><i class="icon icon-vk"></i></a></li>
+              <li><a href="#"><i class="icon icon-inst"></i></a></li>
+              <li><a href="#"><i class="icon icon-tw"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-xs-12">
+            <div class="footer-logo">
+              <a href="#"><img src="images/footer_logo.png" alt="logo"></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="copyright clearfix">
+          <p>&#169; 2017 Все права защищены</p>
+          <a href="#"><p>Разработка сайта Creative agency Astudio</p></a>
+        </div>
+
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- ScrollTop button -->
+    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>наверх</a>
+    <!-- End ScrollTop button -->
+
+    <!-- Navbar layer -->
+    <div class="navbar-layer"></div>
+    <!-- End Navbar layer -->
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="/bower_components/wow/dist/wow.js"></script>
+    <script src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.js"></script>
+    <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script> -->
+    <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script> -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

@@ -106,91 +106,485 @@
     </header>
     <!-- End Header -->
 
-    <main id="login-registration" class="section-padding">
+    <section id="" class="section-padding">
       <div class="container">
-        <h4>Для того чтобы подать объявление и быстро продать авто Вам необходимо: Войти в личный кабинет или Зарегистрироваться</h4>
-        <div class="row">
-          <div class="col-sm-6">
-            <section class="login-section">
-              <h4>Войти в личный кабинет</h4>
-              <form action="#" id="login-form">
-                <label>Email <span>*</span><input type="email" required></label>
-                <label>Пароль <span>*</span><input type="password" required></label>
-                <input type="submit" value="Войти">
-                <div>
-                  <a href="#">Забыли пароль?</a>
-                </div>
-              </form>
-            </section>
-          </div>
 
-          <div class="col-sm-6">
-            <section class="registration-section">
-              <h4>Регистрация</h4>
-              <form action="#" id="registration-form" class="center-block">
-                <label>Email <span>*</span><input type="email" required></label>
-                <label>Пароль <span>*</span><input type="password" required></label>
-                <label>Повторить пароль <span>*</span><input type="password" required></label>
-                <label>Имя <span>*</span><input type="text" required></label>
-                <label>Телефон <span>*</span><input type="tel" required></label>
-                <div class="resistration-form-select clearfix">
-                  <p>Область <span>*</span></p>
-                  <div class="resistration-form-select-wrapper">
-                    <select name="" id="" class="nice-select-common">
-                      <option data-display=""></option>
-                      <option value="1">Область 1</option>
-                      <option value="2">Область 2</option>
-                      <option value="3">Область 3</option>
-                      <option value="4">Область 4</option>
-                      <option value="5">Область 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="resistration-form-select clearfix">
-                  <p>Город <span>*</span></p>
-                  <div class="resistration-form-select-wrapper">
-                    <select name="" id="" class="nice-select-common">
-                      <option data-display=""></option>
-                      <option value="1">Город 1</option>
-                      <option value="2">Город 2</option>
-                      <option value="3">Город 3</option>
-                      <option value="4">Город 4</option>
-                      <option value="5">Город 5</option>
-                    </select>
-                  </div>
-                </div>
-                <ul class="registration-form-check-list clearfix">
-                  <li>
-                    <div class="check-item">
-                      <input type="checkbox" id="registration-form-check-1" name="registration-form-check" value="">
-                      <label for="registration-form-check-1">Разрешить контактировать со мной через email</label>
-                      <div class="check"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="check-item">
-                      <input type="checkbox" id="registration-form-check-2" name="registration-form-check" value="">
-                      <label for="registration-form-check-2">Получать рассылки про обновления, акции, конкурсы</label>
-                      <div class="check"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="check-item">
-                      <input type="checkbox" id="registration-form-check-3" name="registration-form-check" value="">
-                      <label for="registration-form-check-3">Я принимаю условия изложенные в “Соглашении о услуг” и “Политике конфиденциальностии”</label>
-                      <div class="check"></div>
-                    </div>
-                  </li>
-                </ul>
-                
-                <input type="submit" value="Зарегистрироваться">
-                <p>Уже регистрировались? <a href="#">Войдите</a></p>
-              </form>
-            </section>
+        <div class="row">
+          <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+            <div class="my-account-btn clearfix">
+              <a href="#" class="offcanvas-toggle pull-left" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">Мой кабинет</a>
+            </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-3">
+            <aside class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+              <a href="#" class="offcanvas-close"><i class="fa fa-angle-left" aria-hidden="true"></i>Свернуть</a>
+              <ul class="account-sidebar-menu">
+                <li><h5>Мой кабинет</h5></li>
+                <li><a href="#"><i class="icon-acc-1"></i>Мои данные</a></li>
+                <li><a href="#"><i class="icon-acc-2"></i>Мои объявления</a></li>
+                <li><a href="#"><i class="icon-acc-3"></i>Архив</a></li>
+                <li><a href="#"><i class="icon-acc-4"></i>Мои Авторазборки</a></li>
+                <li><a href="#"><i class="icon-acc-5"></i>Мои СТО</a></li>
+                <li><a href="#"><i class="icon-acc-6"></i>Мои платежи</a></li>
+              </ul>
+              <div class="account-sidebar-btns">
+                <a href="#">добавить объявление</a>
+                <a href="#">добавить сто</a>
+                <a href="#">добавить авторазборку</a>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-sm-8 col-md-9">
+            <main id="add-ad">
+
+              <div class="section-title">
+                <span class="lines-left"></span>
+                <h2>Добавить объявление</h2>
+                <span class="lines-right"></span>
+              </div>
+              
+              <form action="#" id="add-ad-form">
+
+                <div class="row">
+
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="add-ad-security">
+
+                      <div class="block-title">
+                        <h3>Безопасность</h3>
+                      </div>
+
+                      <ul class="clearfix">
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-18" name="tth-check" value="">
+                            <label for="tth-check-18">ABD</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-19" name="tth-check" value="">
+                            <label for="tth-check-19">Иммобилайзер</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-20" name="tth-check" value="">
+                            <label for="tth-check-20">ABS</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-21" name="tth-check" value="">
+                            <label for="tth-check-21">Пневмоподвеска</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-22" name="tth-check" value="">
+                            <label for="tth-check-22">ESP</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-23" name="tth-check" value="">
+                            <label for="tth-check-23">Подушка безопастности</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-24" name="tth-check" value="">
+                            <label for="tth-check-24">Бронированный автомобиль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-25" name="tth-check" value="">
+                            <label for="tth-check-25">Серворуль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-26" name="tth-check" value="">
+                            <label for="tth-check-26">Галогенные фары</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-27" name="tth-check" value="">
+                            <label for="tth-check-27">Сигнализация</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-28" name="tth-check" value="">
+                            <label for="tth-check-28">Замок на КПП</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-29" name="tth-check" value="">
+                            <label for="tth-check-29">Центральный замок</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="add-ad-comfort">
+
+                      <div class="block-title">
+                        <h3>Комфорт</h3>
+                      </div>
+
+                      <ul class="clearfix">
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-30" name="tth-check" value="">
+                            <label for="tth-check-30">Бортовой компьютер</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-31" name="tth-check" value="">
+                            <label for="tth-check-31">Круиз контроль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-32" name="tth-check" value="">
+                            <label for="tth-check-32">Подогрев руля</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-33" name="tth-check" value="">
+                            <label for="tth-check-33">Датчик света</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-34" name="tth-check" value="">
+                            <label for="tth-check-34">Люк</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-35" name="tth-check" value="">
+                            <label for="tth-check-35">Подогрев сидений</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-36" name="tth-check" value="">
+                            <label for="tth-check-36">Запуск кнопкой</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-37" name="tth-check" value="">
+                            <label for="tth-check-37">Мультируль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-38" name="tth-check" value="">
+                            <label for="tth-check-38">Сенсор дождя</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-39" name="tth-check" value="">
+                            <label for="tth-check-39">Климат контроль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-40" name="tth-check" value="">
+                            <label for="tth-check-40">Омыватель фар</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-41" name="tth-check" value="">
+                            <label for="tth-check-41">Усилитель руля</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-42" name="tth-check" value="">
+                            <label for="tth-check-42">Кожаный салон</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-43" name="tth-check" value="">
+                            <label for="tth-check-43">Память сидений</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-44" name="tth-check" value="">
+                            <label for="tth-check-44">Эл.стеклоподъёмники</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-45" name="tth-check" value="">
+                            <label for="tth-check-45">Кондиционер</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-46" name="tth-check" value="">
+                            <label for="tth-check-46">Парктроник</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-47" name="tth-check" value="">
+                            <label for="tth-check-47">Электропакет</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-48" name="tth-check" value="">
+                            <label for="tth-check-48">Круиз контроль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-49" name="tth-check" value="">
+                            <label for="tth-check-49">Подогрев зеркал</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="add-ad-multimedia">
+
+                      <div class="block-title">
+                        <h3>Мультимедиа</h3>
+                      </div>
+
+                      <ul class="clearfix">
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-50" name="tth-check" value="">
+                            <label for="tth-check-50">CD</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-51" name="tth-check" value="">
+                            <label for="tth-check-51">Магнитола</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-52" name="tth-check" value="">
+                            <label for="tth-check-52">DVD</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-53" name="tth-check" value="">
+                            <label for="tth-check-53">Сабвуфер</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-54" name="tth-check" value="">
+                            <label for="tth-check-54">MP3</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-55" name="tth-check" value="">
+                            <label for="tth-check-55">Система навигации GPS</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-56" name="tth-check" value="">
+                            <label for="tth-check-56">Акустика</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="add-ad-other">
+
+                      <div class="block-title">
+                        <h3>Прочее</h3>
+                      </div>
+
+                      <ul class="clearfix">
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-57" name="tth-check" value="">
+                            <label for="tth-check-57">Газовая установка (ГБО)</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-58" name="tth-check" value="">
+                            <label for="tth-check-58">Правый руль</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-59" name="tth-check" value="">
+                            <label for="tth-check-59">Дерево</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-60" name="tth-check" value="">
+                            <label for="tth-check-60">Тонирование стёкол</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-61" name="tth-check" value="">
+                            <label for="tth-check-61">Длинная база</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-62" name="tth-check" value="">
+                            <label for="tth-check-62">Тюнинг</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-63" name="tth-check" value="">
+                            <label for="tth-check-63">Кузов MAXI</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="check-item tth-check-item">
+                            <input type="checkbox" id="tth-check-64" name="tth-check" value="">
+                            <label for="tth-check-64">Фаркоп</label>
+                            <div class="check"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+              </form>
+
+            </main>
+          </div>
+        </div>
+
       </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer>

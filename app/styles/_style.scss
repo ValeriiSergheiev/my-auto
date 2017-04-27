@@ -2320,3 +2320,35 @@ a.sto-search-main-btn {
 		}
 	}
 }
+
+/* *** Страница ДОБАВИТЬ ОБЪЯВЛЕНИЕ *** */
+#add-ad {
+	.section-title h2 {
+		text-transform: none;
+	}
+}
+
+.add-ad-security, .add-ad-comfort {
+	@extend .extended-search-bottom-security;
+	padding: 10px 0;
+	height: auto;
+	min-height: 310px;
+	ul li {
+		width: calc(100% / 2 - 20px);
+		margin: 0 10px;
+	}
+	.check-item {
+		label {
+			font-size: 14px;
+			@include text-nowrap();
+		}
+	}
+}
+
+.add-ad-multimedia, .add-ad-other {
+	@extend .add-ad-security;
+	height: auto;
+	min-height: auto;
+}
+
+
