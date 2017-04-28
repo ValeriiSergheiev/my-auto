@@ -2351,4 +2351,195 @@ a.sto-search-main-btn {
 	min-height: auto;
 }
 
+.add-ad-info {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	.block-title {
+		margin-bottom: 20px;
+	}
+	position: relative;
+	margin-bottom: 30px;
+	&::after {
+		@extend .after;
+		top: 0;
+		bottom: 15px;
+		right: -15px;
+		border-right: $border;
+	}
+}
 
+.add-ad-info-select {
+	margin-bottom: 5px;
+	p {
+		float: left;
+		font-size: 17px;
+		margin-top: 4px;
+		span {
+			color: $yellow;
+		}
+	}
+	p + div {
+		float: right;
+		.nice-select {
+			height: 30px;
+			line-height: 30px;
+			border: $border;
+			span.current {
+				font-size: 15px;
+			}
+			.list {
+				border: $border;
+				.option {
+					font-size: 17px;
+					line-height: 25px;
+					min-height: 25px;
+				}
+			}
+			&::after {
+				right: 10px;
+			}
+		}
+	}
+}
+
+.add-ad-info-input {
+	label {
+		display: block;
+		font-size: 17px;
+		font-weight: normal;
+		margin-bottom: 5px;
+		line-height: 30px;
+		span {
+			color: $yellow;
+		}
+		input {
+			float: right;
+			display: block;
+			width: 250px;
+			height: 30px;
+			font-size: 15px;
+			border: $border;
+			color: $text-grey-light;
+			padding: 0 10px;
+		}
+	}
+}
+
+.add-ad-info-input-odo {
+	@extend .add-ad-info-input;
+	position: relative;
+	label {
+		input {
+			width: 170px;
+			margin-right: 80px;
+		}
+	}
+	&::after{
+		position: absolute;
+		content: "тыс. км";
+		right: 0;
+		top: 3px;
+		font-size: 17px;
+	}
+}
+
+.add-ad-info-input-price {
+	p {
+		float: left;
+		font-size: 17px;
+		line-height: 30px;
+		span {
+			color: $yellow;
+		}
+	}
+}
+
+.add-ad-field-group {
+	float: right;
+	width: 250px;
+	input {
+		float: left;
+		width: 170px;
+		height: 30px;
+		font-size: 15px;
+		border: $border;
+		color: $text-grey-light;
+		padding: 0 10px;
+	}
+	& > div {
+		float: right;
+		.nice-select {
+			width: 70px;
+			height: 30px;
+			line-height: 30px;
+			border: $border;
+			span.current {
+				font-size: 15px;
+			}
+			.list {
+				border: $border;
+				width: 70px;
+				.option {
+					font-size: 17px;
+					line-height: 25px;
+					min-height: 25px;
+				}
+			}
+			&::after {
+				right: 10px;
+			}
+		}
+	}
+}
+
+.add-ad-check-group {
+	ul {
+		width: 250px;
+		float: right;
+		margin-top: 30px;
+		li {
+			margin-top: 10px;
+			color: $text-grey-light;
+			i {
+				vertical-align: middle;
+				margin: 0 3px;
+			}
+			.check {
+				top: 3px;
+			}
+		}
+	}
+}
+
+.add-ad-photo {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	.block-title {
+		margin-bottom: 20px;
+	}
+}
+
+.add-ad-upload {
+	h4 {
+		float: left;
+		font-size: 17px;
+	}
+	h4 + div {
+		float: right;
+		width: 250px;
+		input[type="file"] {
+			cursor: pointer;
+			font-size: 14px;
+			margin-bottom: 15px;
+			width: 250px;
+		}
+		p {
+			font-size: 14px;
+			font-style: italic;
+			color: $text-grey-light;
+			line-height: 1.1;
+		}
+	}
+}

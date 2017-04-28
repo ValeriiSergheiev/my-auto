@@ -129,7 +129,7 @@
         margin-left: 0;
     }
 
-    .resistration-form-select {
+    .registration-form-select {
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
@@ -137,10 +137,20 @@
             float: none;
             text-align: left;
         }
-        .resistration-form-select-wrapper {
-         width: 100%;
-     }
- }
+        .registration-form-select-wrapper {
+           width: 100%;
+       }
+   }
+
+   .add-ad-info {
+    &::after {
+        border-right: none;
+    }
+}
+
+.add-ad-security, .add-ad-comfort {
+    min-height: auto;
+}
 
 
 }
@@ -517,6 +527,15 @@
         margin: 0;
     }
 
+    .add-ad-info {
+        .block-title {
+            margin: 15px 0 5px;
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
 
 }
 
@@ -759,6 +778,51 @@
                 }
             }
         }
+
+        .add-ad-info-select {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            p {
+                float: none;
+            }
+            p + div {
+                float: none;
+            }
+        }
+
+        .add-ad-info-input {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            input {
+                float: none;
+            }
+        }
+
+        .add-ad-info-input-odo::after {
+            top: 35px;
+        }
+
+        .add-ad-info-input-price {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            p {
+                float: none;
+            }
+        }
+
+        .add-ad-field-group {
+            float: none;
+        }
+
+        .add-ad-check-group {
+            ul {
+                width: 100%;
+            }
+        }
+
 
     }
 

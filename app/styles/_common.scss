@@ -120,6 +120,12 @@ select, button, input {
 		font-weight: 700;
 		font-size: 25px;
 	}
+	h4 {
+		color: $yellow;
+		font-weight: 700;
+		font-size: 18px;
+		text-align: left;
+	}
 }
 
 .sell-auto {
@@ -234,6 +240,9 @@ select, button, input {
 }
 .icon-exchange {
 	@include sprite($exchange);
+}
+.icon-exchange-sm {
+	@include sprite($exchange-sm);
 }
 .icon-money {
 	@include sprite($money);
