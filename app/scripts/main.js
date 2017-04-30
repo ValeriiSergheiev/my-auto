@@ -43,6 +43,19 @@ if (touch) { // remove all :hover stylesheets
 		$(this).toggleClass('color-select-active');
 	});
 
+	$('.add-ad-color-select-btn').click(function(event) {
+		event.preventDefault();
+		$('.add-ad-color-select').slideToggle('fast');
+	});
+
+	$('.add-ad-color-select li').click(function() {
+		$(this).addClass('color-select-active').siblings().removeClass('color-select-active');
+		//$(this).toggleClass('color-select-active');
+		var carColor = $(this).css('background-color');
+		$('.add-ad-color-select').fadeOut('fast');
+		$('.add-ad-color-select-btn span:first-child').css('background', carColor);
+	});
+
 	//Mobile menu
 	$('.mob-menu-btn').click(function(event) {
 		$('.menu').slideToggle('fast');
