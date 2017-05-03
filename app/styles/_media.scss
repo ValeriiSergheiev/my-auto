@@ -536,6 +536,24 @@
         }
     }
 
+    .mfp-close {
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+    }
+
+    .photo-thumb {
+        display: none;
+    }
+
+    .photo-thumb-modal {
+        display: none;
+    }
+
+    .photo-full-modal {
+        max-height: 100% !important;
+    }
+
 
 }
 

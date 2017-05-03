@@ -2736,3 +2736,104 @@ a.sto-search-main-btn {
 		}
 	}
 }
+
+/* *** Страница КАРТОЧКА *** */
+.breadcrumbs-nav {
+	margin: 30px 0;
+	a {
+		display: inline-block;
+	}
+	.breadcrumb {
+		display: inline-block;
+		margin-bottom: 0;
+		li {
+			font-size: 18px;
+			letter-spacing: .02em;
+			color: $text-grey;
+			& + li::before {
+				content: '>';
+				color: $text-grey;
+				padding: 0 10px;
+			}
+		}
+		& > .active {
+			color: $yellow;
+		}
+	}
+}
+
+.photo-full {
+	width: 100%;
+	& > div {
+		max-width: 780px;
+		max-height: 445px;
+		overflow: hidden;
+	}
+}
+
+.photo-thumb {
+	& > div {
+		cursor: pointer;
+	}
+	.slick-slide {
+		border: 2px solid transparent;
+		outline: none;
+	}
+	.slick-current {
+		border-color: $yellow;
+	}
+}
+
+//Gallery Popup
+.gallery-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: calc(780px + 40px + 25px);
+	margin: 20px auto;
+	height: 90vh;
+	overflow: hidden;
+}
+
+.photo-thumb-modal {
+	margin-right: 25px;
+	& > div {
+		width: 100px;
+		float: left;
+		margin-bottom: 10px;
+		//margin-right: calc((100% - 100px * 7) / 6);
+		margin-right: 10px;
+		border: 2px solid transparent;
+	}
+}
+
+.photo-full-modal {
+	overflow-y: auto;
+}
+
+.photo-full-modal-item {
+	margin-top: 10px;
+	max-width: 780px;
+	max-height: 445px;
+	overflow: hidden;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.show-all-photo {
+	a {
+		display: inline-block;
+		font-size: 18px;
+		margin: 5px 0;
+		color: $yellow;
+		i {
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+		&:hover {
+			color: $green;
+		}
+	}
+}
