@@ -250,6 +250,9 @@ select, button, input {
 .icon-timer {
 	@include sprite($timer);
 }
+.icon-timer-green {
+	@include sprite($timer-green);
+}
 .icon-arrow-right {
 	@include sprite($arrow-right);
 }
@@ -259,8 +262,14 @@ select, button, input {
 .icon-mail {
 	@include sprite($mail);
 }
+.icon-mail-white {
+	@include sprite($mail-white);
+}
 .icon-eye {
 	@include sprite($eye);
+}
+.icon-eye-green {
+	@include sprite($eye-green);
 }
 .icon-photo-yellow {
 	@include sprite($photo-yellow);
@@ -285,5 +294,8 @@ select, button, input {
 }
 .icon-car-grey {
 	@include sprite($car-grey);
+}
+.icon-arrow-left-grey {
+	@include sprite($arrow-left-grey);
 }
 //End Sprites

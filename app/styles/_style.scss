@@ -2739,13 +2739,25 @@ a.sto-search-main-btn {
 
 /* *** Страница КАРТОЧКА *** */
 .breadcrumbs-nav {
-	margin: 30px 0;
-	a {
-		display: inline-block;
+	margin: 20px 0;
+	& > a {
+		@include buttons (#ededed, '', 15px, 30px);
+		border: $border;
+		color: $text-grey-light;
+		font-weight: normal;
+		padding: 0 10px;
+		letter-spacing: .02em;
+		i {
+			margin-right: 5px;
+		}
+		&:hover {
+			opacity: .7;
+		}
 	}
 	.breadcrumb {
 		display: inline-block;
 		margin-bottom: 0;
+		background-color: transparent;
 		li {
 			font-size: 18px;
 			letter-spacing: .02em;
@@ -2758,6 +2770,24 @@ a.sto-search-main-btn {
 		}
 		& > .active {
 			color: $yellow;
+		}
+	}
+}
+
+.card-title {
+	h3 {
+		font-size: 30px;
+		font-weight: bold;
+		i {
+			font-size: 18px;
+			color: $yellow;
+			vertical-align: middle;
+		}
+		span {
+			color: $text-grey-light;
+		}
+		img {
+			vertical-align: top;
 		}
 	}
 }
@@ -2776,11 +2806,16 @@ a.sto-search-main-btn {
 		cursor: pointer;
 	}
 	.slick-slide {
-		border: 2px solid transparent;
 		outline: none;
+		img {
+			border: 2px solid transparent;
+		}
 	}
 	.slick-current {
-		border-color: $yellow;
+		//border-color: $yellow;
+		img {
+			border: 2px solid $yellow;
+		}
 	}
 }
 
@@ -2826,7 +2861,7 @@ a.sto-search-main-btn {
 	a {
 		display: inline-block;
 		font-size: 18px;
-		margin: 5px 0;
+		margin: 8px 0 3px;
 		color: $yellow;
 		i {
 			vertical-align: middle;
@@ -2835,5 +2870,259 @@ a.sto-search-main-btn {
 		&:hover {
 			color: $green;
 		}
+	}
+}
+
+.card-info {
+	h2 {
+		position: relative;
+		font-size: 35px;
+		color: $green;
+		font-weight: bold;
+		@include clearfix;
+		span {
+			color: $black;
+			//margin-left: 15px;
+			float: right;
+		}
+		&::after {
+			@extend .after;
+			content: '(1 у.е. = 00,00)';
+			font-size: 14px;
+			color: $text-grey-light;
+			right: 0;
+			bottom: -15px;
+			font-weight: normal;
+		}
+	}
+	h5 {
+		font-size: 18px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		span {
+			font-weight: bold;
+		}
+	}
+	h6 {
+		font-size: 16px;
+		color: $text-grey-light;
+		margin-top: 5px;
+		i {
+			vertical-align: baseline;
+		}
+	}
+}
+
+.card-phone {
+	border-top: 1px dashed $grey;
+	border-bottom: 1px dashed $grey;
+	margin: 25px 0;
+	padding: 10px 0;
+	p {
+		font-size: 20px;
+	}
+	span {
+		font-size: 23px;
+		font-weight: bold;
+		display: block;
+		line-height: 1.1;
+	}
+}
+
+.card-contact {
+	a:first-child  {
+		@include buttons ($yellow, '', 20px, 45px);
+		font-size: 20px;
+		padding: 0 20px;
+		i {
+			vertical-align: middle;
+		}
+		&:hover {
+			@include buttons-hover ($green, 45px);
+		}
+	}
+	ul li {
+		display: inline-block;
+		margin-top: 20px;
+		font-size: 20px;
+		margin-right: 20px;
+		span {
+			color: $green;
+		}
+		i {
+			vertical-align: middle;
+		}
+	}
+	ul + a {
+		display: block;
+		width: 290px;
+		font-size: 20px;
+		color: $text-grey;
+		border: 1px solid $text-grey;
+		text-align: center;
+		padding: 7px 0;
+		margin: 20px 0;
+		&:hover {
+			opacity: .7;
+		}
+	}
+	a:last-child {
+		display: inline-block;
+		font-size: 20px;
+		margin-top: 7px;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.card-description {
+	margin-top: 20px;
+	h3 {
+		font-size: 25px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 17px;
+		letter-spacing: .02em;
+	}
+	& > div {
+		p:first-child {
+			float: left;
+			font-weight: bold;
+			width: 160px;
+		}
+		p:last-child {
+			float: left;
+		}
+	}
+	article {
+		font-size: 17px;
+		letter-spacing: .02em;
+		margin: 15px 0;
+	}
+	h4 {
+		font-size: 25px;
+		font-weight: bold;
+		border-bottom: $border;
+		padding-bottom: 20px;
+	}
+}
+
+#card-form {
+	max-width: 510px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	h6 {
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	div {
+		input {
+			width: 47%;
+			border: $border;
+			padding: 5px;
+			font-size: 15px;
+			color: $text-grey-light;
+			background-color: $section-grey;
+			margin-bottom: 7px;
+			&:first-child {
+				float: left;
+			}
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+	textarea {
+		height: 70px;
+		width: 100%;
+		border: $border;
+		padding: 5px;
+		font-size: 15px;
+		color: $text-grey-light;
+		background-color: $section-grey;
+		resize: none;
+		margin-bottom: 15px;
+		line-height: 1;
+	}
+	input[type="submit"] {
+		@include buttons ($green, '', 18px, 35px);
+		display: block;
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		&:hover {
+			@include buttons-hover ($yellow, 35px);
+		}
+	}
+}
+
+.chat-post {
+	padding: 10px 0;
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 7px;
+		span {
+			color: $text-grey-light;
+			margin-left: 10px;
+		}
+	}
+	p {
+		display: inline-block;
+		font-size: 18px;
+		border-bottom: $border;
+		padding-bottom: 10px;
+	}
+	&:last-child p {
+		border-bottom: none;
+	}
+}
+
+.viewed-ads {
+	border: $border;
+	background-color: $section-grey;
+	padding-top: 20px;
+	h4 {
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+
+.viewed-ad {
+	margin: 20px 0;
+	display: block;
+	img {
+		display: block;
+		float: left;
+		margin: 0 10px;
+	}
+	&:hover {
+		opacity: .9;
+	}
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 16px;
+		color: $text-grey;
+	}
+	h5 {
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 15px;
+		color: $green;
+		text-align: left;
 	}
 }

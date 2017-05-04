@@ -266,7 +266,7 @@ if (touch) { // remove all :hover stylesheets
 	});
 
 	//Gallery Photo Height
-	$('.photo-full a.open-popup-link').click(function() {
+	$('.photo-full a.open-popup-link, .show-all-photo a.open-popup-link').click(function() {
 		var PopupHeight = $('.gallery-popup').height(),
 		ThumbHeight = $('.photo-thumb-modal').height(),
 		PhotoHeight = PopupHeight - ThumbHeight;
