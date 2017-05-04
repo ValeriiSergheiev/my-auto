@@ -138,11 +138,11 @@
             text-align: left;
         }
         .registration-form-select-wrapper {
-         width: 100%;
-     }
- }
+           width: 100%;
+       }
+   }
 
- .add-ad-info {
+   .add-ad-info {
     &::after {
         border-right: none;
     }
@@ -160,6 +160,33 @@
 
 .card-contact ul li {
     margin-right: 10px;
+}
+
+.viewed-ad {
+    border-bottom: $border;
+    text-align: center;
+    img {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h6 {
+        margin: 5px 0 0;
+    }
+    p {
+        line-height: 1.1;
+    }
+    h5 {
+        text-align: center;
+        margin: 5px 0 10px;
+    }
+    &:last-child {
+     border-bottom: none;
+ }
+}
+
+.card-contact a:last-child {
+    margin: 5px 0 10px;
 }
 
 
@@ -486,7 +513,7 @@
         }
 
         #my-data-form {
-           .my-data-check-list li {
+         .my-data-check-list li {
             float: none;
             margin-top: 10px;
             label {
@@ -565,7 +592,7 @@
     }
 
     .photo-full-modal {
-        max-height: 100% !important;
+        //max-height: 100% !important;
     }
 
     .breadcrumbs-nav .breadcrumb {

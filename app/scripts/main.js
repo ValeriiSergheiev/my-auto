@@ -225,7 +225,9 @@ if (touch) { // remove all :hover stylesheets
 		{
 			breakpoint: 768,
 			settings: {
-				arrows: true
+				arrows: true,
+				prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+				nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
 			}
 		}
 		]
@@ -267,10 +269,18 @@ if (touch) { // remove all :hover stylesheets
 
 	//Gallery Photo Height
 	$('.photo-full a.open-popup-link, .show-all-photo a.open-popup-link').click(function() {
-		var PopupHeight = $('.gallery-popup').height(),
-		ThumbHeight = $('.photo-thumb-modal').height(),
-		PhotoHeight = PopupHeight - ThumbHeight;
-		$('.photo-full-modal').css('max-height', PhotoHeight);
+		if ($(window).width() > 768) {
+			var PopupHeight = $('.gallery-popup').height(),
+			ThumbHeight = $('.photo-thumb-modal').height(),
+			TitleHeight = $('.gallery-popup-title').height(),
+			PhotoHeight = PopupHeight - ThumbHeight - TitleHeight -10;
+			$('.photo-full-modal').css('max-height', PhotoHeight);
+		} else {
+			var PopupHeight = $('.gallery-popup').height(),
+			TitleHeight = $('.gallery-popup-title').height(),
+			PhotoHeight = PopupHeight - TitleHeight -10;
+			$('.photo-full-modal').css('max-height', PhotoHeight);
+		};
 	});
 
 	$('.photo-thumb-modal div').click(function() {
