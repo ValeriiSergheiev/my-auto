@@ -2781,9 +2781,9 @@ a.sto-search-main-btn {
 	h3 {
 		font-size: 30px;
 		font-weight: bold;
-		i {
+		a {
 			font-size: 18px;
-			color: $yellow;
+			color: $grey;
 			vertical-align: middle;
 		}
 		span {
@@ -2821,8 +2821,7 @@ a.sto-search-main-btn {
 		height: 60px;
 		width: 30px;
 		border: none;
-		background-color: #fff;
-		opacity: .5;
+		background-color: rgba(255, 255, 255, 0.6);
 		i {
 			font-size: 46px;
 			color: $yellow;
@@ -2840,8 +2839,7 @@ a.sto-search-main-btn {
 		height: 60px;
 		width: 30px;
 		border: none;
-		background-color: #fff;
-		opacity: .5;
+		background-color: rgba(255, 255, 255, 0.6);
 		i {
 			font-size: 46px;
 			color: $yellow;
@@ -2866,6 +2864,42 @@ a.sto-search-main-btn {
 		//border-color: $yellow;
 		img {
 			border: 2px solid $yellow;
+		}
+	}
+	.slick-prev {
+		position: absolute;
+		top: calc(50% - 30px);
+		padding: 0 4px;
+		left: 0;
+		z-index: 200;
+		height: 100%;
+		width: 30px;
+		border: none;
+		background-color: rgba(255, 255, 255, 0.6);
+		i {
+			font-size: 46px;
+			color: $yellow;
+		}
+		&:hover {
+			opacity: .8;
+		}
+	}
+	.slick-next {
+		position: absolute;
+		top: calc(50% - 30px);
+		padding: 0 4px;
+		right: 0;
+		z-index: 200;
+		height: 100%;
+		width: 30px;
+		border: none;
+		background-color: rgba(255, 255, 255, 0.6);
+		i {
+			font-size: 46px;
+			color: $yellow;
+		}
+		&:hover {
+			opacity: .8;
 		}
 	}
 }

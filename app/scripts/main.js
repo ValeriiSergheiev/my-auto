@@ -247,9 +247,11 @@ if (touch) { // remove all :hover stylesheets
 		slidesToScroll: 1,
 		asNavFor: '.photo-full',
 		dots: false,
-		arrows: false,
 		centerMode: true,
 		focusOnSelect: true,
+		arrows: true,
+		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
 		responsive: [
 		{
 			breakpoint: 1200,
@@ -271,7 +273,8 @@ if (touch) { // remove all :hover stylesheets
 			settings: {
 				centerMode: true,
 				slidesToShow: 4,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				arrows: false
 			}
 		}
 		]
@@ -304,6 +307,10 @@ if (touch) { // remove all :hover stylesheets
 		$('.photo-full-modal').animate({scrollTop: $('#' + PhotoAnchor).offset().top}, 800);
 			//$('.photo-full-modal').find('#' + PhotoAnchor).css('box-shadow', '3px 3px 5px red');
 		});
+
+	$('.card-title a').click(function() {
+		$(this).toggleClass('active-yellow');
+	});
 
 
 });
