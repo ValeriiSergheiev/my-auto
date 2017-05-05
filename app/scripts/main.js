@@ -212,6 +212,16 @@ if (touch) { // remove all :hover stylesheets
 		mainClass: 'mfp-fade'
 	});
 
+	//Magnific Popup button initialize
+	$('.submit-open-popup').magnificPopup({
+		items: {
+			src: '#popup-success',
+			type: 'inline'
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
 	//Gallery Slider
 	$('.photo-full').slick({
 		slidesToShow: 1,

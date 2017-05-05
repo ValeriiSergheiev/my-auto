@@ -2279,7 +2279,7 @@ a.sto-search-main-btn {
 	}
 }
 
-.resistration-form-select {
+.registration-form-select {
 	margin-bottom: 10px;
 	p {
 		float: left;
@@ -2290,7 +2290,7 @@ a.sto-search-main-btn {
 			color: $yellow;
 		}
 	}
-	.resistration-form-select-wrapper {
+	.registration-form-select-wrapper {
 		float: right;
 		width: 300px;
 	}
@@ -2299,6 +2299,9 @@ a.sto-search-main-btn {
 		width: 100%;
 		border: $border;
 		background-color: $section-grey;
+		.list {
+			width: 100%;
+		}
 		span.current {
 			font-size: 17px;
 			color: $black;
@@ -3244,4 +3247,67 @@ a.sto-search-main-btn {
 	@extend .sto-search-popup;
 	background-image: url('../images/form-bg-2.jpg');
 	background-position: left bottom;
+}
+
+/* *** Страница РЕГИСТРАЦИЯ *** */
+#registration {
+	background-image: url('../images/registration-2-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	.section-title {
+		margin-bottom: 0;
+		h2 {
+			text-transform: none;
+		}
+	}
+	.registration-section {
+		max-width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.popup-success {
+	.section-title {
+		margin-bottom: 20px;
+		h2 {
+			text-transform: none;
+		}
+	}
+	p {
+		font-size: 18px;
+		color: $text-grey;
+		text-align: center;
+		line-height: 1.2;
+		margin-bottom: 10px;
+		b {
+			color: $black;
+		}
+	}
+	h6 {
+		text-align: center;
+		font-size: 18px;
+		color: $yellow;
+		margin-top: 20px;
+		font-weight: bold;
+	}
+	div {
+		margin-top: 30px;
+		a {
+			@include buttons ($green, '', 16px, 45px);
+			display: block;
+			width: 200px;
+			float: left;
+			font-weight: normal;
+			text-transform: uppercase;
+			text-align: center;
+			margin-right: calc((100% - 200px * 3) / 2);
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				@include buttons-hover ($yellow, 45px);
+			}
+		}
+	}
 }
