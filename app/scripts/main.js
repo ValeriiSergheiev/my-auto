@@ -312,5 +312,9 @@ if (touch) { // remove all :hover stylesheets
 		$(this).toggleClass('active-yellow');
 	});
 
+	//Min window height
+	var minWindowHeight = $(window).height() - $('header').height() - $('footer').height() - 30;
+	$('.min-section-height').css('height', minWindowHeight);
+	
 
 });

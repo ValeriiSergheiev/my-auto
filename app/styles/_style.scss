@@ -3400,3 +3400,106 @@ a.sto-search-main-btn {
 #autonews-info {
 	@extend #helpful-info;
 }
+
+/* *** Страница ПРОВЕРИТЬ ПРОДАВЦА *** */
+#verify {
+	padding: 0;
+	background-image: url('../images/verify-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+}
+
+.verify-form-wrapper {
+	div {
+		float: right;
+		max-width: 750px;
+	}
+}
+
+.verify-form {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 30px 0;
+	h6 {
+		font-size: 25px;
+	}
+	input {
+		display: block;
+		margin: auto;
+		margin-top: 15px;
+		width: 100%;
+		max-width: 350px;
+		height: 50px;
+		border: $border;
+		padding: 0 10px;
+		font-size: 18px;
+		color: $text-grey-light;
+		&[type="submit"] {
+			color: #fff;
+			background-color: $yellow;
+			border: none;
+			transition: $transition;
+			&:hover {
+				@include buttons-hover ($green, 50px);
+			}
+		}
+	}
+}
+
+.popup-claim {
+	h5 {
+		font-size: 25px;
+		letter-spacing: .02em;
+		text-align: center;
+		span {
+			font-weight: bold;
+		}
+		& + h5 {
+			color: $green;
+			margin: 20px 0;
+		}
+	}
+	article {
+		margin-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: $border;
+		&:nth-last-child(3) {
+			border: none;
+		}
+		h6 {
+			font-size: 19px;
+			letter-spacing: .02em;
+			margin-bottom: 5px;
+			span {
+				color: $text-grey-light;
+			}
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: .02em;
+			color: $text-grey;
+			text-align: justify;
+		}
+	}
+	div {
+		a {
+			width: 240px;
+			@include buttons ($green, '', 20px, 55px);
+			display: block;
+			text-align: center;
+			font-weight: normal;
+			margin: 0 50px;
+			&:first-child {
+				float: left;
+			}
+			&:last-child {
+				float: right;
+			}
+			&:hover {
+				@include buttons-hover ($yellow, 55px);
+			}
+		}
+	}
+}

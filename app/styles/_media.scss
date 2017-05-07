@@ -615,6 +615,22 @@
         }
     }
 
+    .popup-claim {
+        div {
+            a {
+                margin-left: auto;
+                margin-right: auto;
+             &:first-child {
+                float: none;
+            }
+            &:last-child {
+                float: none;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
 
 }
 
