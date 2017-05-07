@@ -3345,3 +3345,58 @@ a.sto-search-main-btn {
 		}
 	}
 }
+
+/* *** Страница ПОЛЕЗНАЯ ИНФОРМАЦИЯ *** */
+#helpful-info {
+	.section-title {
+		margin-bottom: 0;
+	}
+}
+
+.helpful-info-item {
+	display: block;
+	text-align: center;
+	width: 250px;
+	margin-top: 30px;
+	transition: $transition;
+	img {
+		display: block;
+	}
+	div {
+		border: $border;
+		h5 {
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 15px 0;
+		}
+		p {
+			font-size: 14px;
+			color: $text-grey;
+			line-height: 1.1;
+		}
+		span {
+			display: inline-block;
+			font-size: 16px;
+			text-transform: uppercase;
+			margin: 10px 0;
+			background-color: $green;
+			color: #fff;
+			padding: 8px 15px;
+			line-height: 1;
+			transition: $transition;
+		}
+	}
+	&:hover {
+		box-shadow: $shadow;
+		span {
+			background-color: $yellow;
+		}
+	}
+
+}
+
+/* *** Страница НОВОСТИ В АВТОМОБИЛЬНОМ МИРЕ *** */
+#autonews-info {
+	@extend #helpful-info;
+}
