@@ -303,6 +303,12 @@
         margin-top: 20px;
     }
 
+    .car-brand-row {
+        a {
+            width: calc(100% / 6);
+        }
+    }
+
     
 }
 
@@ -620,16 +626,22 @@
             a {
                 margin-left: auto;
                 margin-right: auto;
-             &:first-child {
-                float: none;
-            }
-            &:last-child {
-                float: none;
-                margin-top: 15px;
+                &:first-child {
+                    float: none;
+                }
+                &:last-child {
+                    float: none;
+                    margin-top: 15px;
+                }
             }
         }
     }
-}
+
+    .car-brand-row {
+        a {
+            width: calc(100% / 4);
+        }
+    }
 
 
 }
@@ -949,6 +961,12 @@
                 &:nth-child(4n) {
                     margin-right: 0;
                 }
+            }
+        }
+
+        .car-brand-row {
+            a {
+                width: calc(100% / 2);
             }
         }
 

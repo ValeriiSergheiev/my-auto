@@ -29,6 +29,15 @@ if (touch) { // remove all :hover stylesheets
 		$(this).addClass('active-yellow').siblings().removeClass('active-yellow');
 	});
 
+	$('.img-upload li').click(function() {
+		$(this).find('a').addClass('active-yellow');
+		$(this).siblings().find('a').removeClass('active-yellow');
+	});
+
+	$('.img-remove-btn').click(function() {
+		$(this).parent().remove();
+	});
+
 	$('.menu li').click(function() {
 		$(this).addClass('menu-active').siblings().removeClass('menu-active');
 	});
