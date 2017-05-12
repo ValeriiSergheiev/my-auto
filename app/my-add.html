@@ -185,10 +185,10 @@
                     <div class="btn-group">
                       <a href="#">просмотр</a>
                       <a href="#">редактировать</a>
-                      <a href="#">обновить</a>
-                      <a href="#">деактивировать</a>
-                      <a href="#">продано</a>
-                      <a href="#">удалить</a>
+                      <a href="#popup-update" class="open-popup-link">обновить</a>
+                      <a href="#popup-deactivate" class="open-popup-link">деактивировать</a>
+                      <a href="#popup-sales" class="open-popup-link">продано</a>
+                      <a href="#popup-remove" class="open-popup-link">удалить</a>
                     </div>
                   </div>
                 </div>
@@ -225,10 +225,10 @@
                     <div class="btn-group">
                       <a href="#">просмотр</a>
                       <a href="#">редактировать</a>
-                      <a href="#">обновить</a>
-                      <a href="#">деактивировать</a>
-                      <a href="#">продано</a>
-                      <a href="#">удалить</a>
+                      <a href="#popup-update" class="open-popup-link">обновить</a>
+                      <a href="#popup-deactivate" class="open-popup-link">деактивировать</a>
+                      <a href="#popup-sales" class="open-popup-link">продано</a>
+                      <a href="#popup-remove" class="open-popup-link">удалить</a>
                     </div>
                   </div>
                 </div>
@@ -265,10 +265,10 @@
                     <div class="btn-group">
                       <a href="#">просмотр</a>
                       <a href="#">редактировать</a>
-                      <a href="#">обновить</a>
-                      <a href="#">деактивировать</a>
-                      <a href="#">продано</a>
-                      <a href="#">удалить</a>
+                      <a href="#popup-update" class="open-popup-link">обновить</a>
+                      <a href="#popup-deactivate" class="open-popup-link">деактивировать</a>
+                      <a href="#popup-sales" class="open-popup-link">продано</a>
+                      <a href="#popup-remove" class="open-popup-link">удалить</a>
                     </div>
                   </div>
                 </div>
@@ -356,6 +356,68 @@
     <!-- Navbar layer -->
     <div class="navbar-layer"></div>
     <!-- End Navbar layer -->
+
+    <!-- Popup success message -->
+    <div id="popup-sales" class="white-popup mfp-hide popup-success">
+      <div class="section-title">
+        <span class="lines-left"></span>
+        <h2>Поздравляем с продажей!</h2>
+        <span class="lines-right"></span>
+      </div>
+      <p>Администрация портала «Моё авто» желает Вам новых приобретений и успеха во всем. Надеемся, Вы продали свое авто через наш сервис. Если Вам будет необходимо еще продать или купить авто, портал «Мое авто» лучший вариант для успешной покупки или продажи.</p>     
+      <h6>С Ув. Администрация портала Быстрый поиск авто</h6>
+      <div class="clearfix">
+        <a href="#">поиск авто</a>
+        <a href="#">добавить авто</a>
+        <a href="#">личный кабинет</a>
+      </div>
+    </div>
+    <!-- End Popup -->
+
+    <!-- Popup remove message -->
+    <div id="popup-remove" class="white-popup mfp-hide popup-remove">
+      <div class="section-title">
+        <span class="lines-left"></span>
+        <h2>Удаление объявления!</h2>
+        <span class="lines-right"></span>
+      </div>
+      <p>Вы уверены, что хотите удалить своё объявление?</p>
+      <div class="popup-remove-btn clearfix center-block">
+        <a href="#">да</a>
+        <a href="#">нет</a>
+      </div>
+    </div>
+    <!-- End Popup -->
+
+    <!-- Popup update message -->
+    <div id="popup-update" class="white-popup mfp-hide popup-remove">
+      <div class="section-title">
+        <span class="lines-left"></span>
+        <h2>Обновление объявления!</h2>
+        <span class="lines-right"></span>
+      </div>
+      <p>При обновлении Вашего объявления, количество просмотров, сообщения и комментарии удалятся с сайта, а дата размещения объявления обновится. Вы уверены, что хотите обновить объявление?</p>
+      <div class="popup-remove-btn clearfix center-block">
+        <a href="#">да</a>
+        <a href="#">нет</a>
+      </div>
+    </div>
+    <!-- End Popup -->
+
+    <!-- Popup deactivate message -->
+    <div id="popup-deactivate" class="white-popup mfp-hide popup-remove">
+      <div class="section-title">
+        <span class="lines-left"></span>
+        <h2>Деактивация объявления!</h2>
+        <span class="lines-right"></span>
+      </div>
+      <p>При деактивации Вашего объявления, авто не будет отображаться на сайте, но будет доступно в Вашем личном кабинете в разделе Архивы. Вы уверены, что хотите деактивировать объявление?</p>
+      <div class="popup-remove-btn clearfix center-block">
+        <a href="#">да</a>
+        <a href="#">нет</a>
+      </div>
+    </div>
+    <!-- End Popup -->
 
 
     <!-- build:js scripts/vendor.js -->

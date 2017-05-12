@@ -224,7 +224,7 @@ if (touch) { // remove all :hover stylesheets
 	//Magnific Popup button initialize
 	$('.submit-open-popup').magnificPopup({
 		items: {
-			src: '#popup-success',
+			src: '#popup-success, #popup-form-success',
 			type: 'inline'
 		},
 		removalDelay: 300,

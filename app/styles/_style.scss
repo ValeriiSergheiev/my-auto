@@ -2740,6 +2740,42 @@ a.sto-search-main-btn {
 	}
 }
 
+.popup-remove {
+	@extend .popup-success;
+	div.popup-remove-btn {
+		width: 240px;
+		a {
+			width: 100px;
+			float: none;
+			margin: 0;
+			&:first-child {
+				float: left;
+				@include buttons ($green, '', 16px, 45px);
+			}
+			&:last-child {
+				float: right;
+				@include buttons ($red, '', 16px, 45px);
+			}
+			&:hover {
+				@include buttons-hover ($yellow, 45px);
+			}
+		}
+	}
+}
+
+.popup-form-success {
+	@extend .popup-success;
+	div a {
+		text-transform: none !important;
+		height: 70px !important;
+		line-height: 1.2 !important;
+		padding-top: 7px;
+		&:hover {
+			background-color: $yellow;
+		}
+	}
+}
+
 /* *** Страница КАРТОЧКА *** */
 .breadcrumbs-nav {
 	margin: 20px 0;
@@ -3303,6 +3339,7 @@ a.sto-search-main-btn {
 
 .popup-success {
 	.section-title {
+		margin-top: 0;
 		margin-bottom: 20px;
 		h2 {
 			text-transform: none;
@@ -3399,6 +3436,12 @@ a.sto-search-main-btn {
 /* *** Страница НОВОСТИ В АВТОМОБИЛЬНОМ МИРЕ *** */
 #autonews-info-1 {
 	@extend #helpful-info-1;
+}
+
+#autonews-info {
+	.section-title {
+		margin-bottom: 0;
+	}
 }
 
 /* *** Страница ПРОВЕРИТЬ ПРОДАВЦА *** */
@@ -3507,7 +3550,7 @@ a.sto-search-main-btn {
 .text-block {
 	margin-bottom: 30px;
 	p {
-		font-size: 16px;
+		font-size: 18px;
 		margin-top: 10px;
 		text-align: justify;
 		letter-spacing: .02em;
@@ -3560,6 +3603,16 @@ a.sto-search-main-btn {
 		}
 		&:hover span:last-child {
 			color: $yellow;
+		}
+	}
+}
+
+/* *** СТРАНИЦА ТЕКСТОВАЯ *** */
+#single-post {
+	.section-title  {
+		margin-bottom: 0;
+		h2 {
+			text-transform: none;
 		}
 	}
 }
