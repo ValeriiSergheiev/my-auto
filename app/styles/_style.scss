@@ -3616,3 +3616,95 @@ a.sto-search-main-btn {
 		}
 	}
 }
+
+/* *** КАТАЛОГ-2 *** */
+.aside-brands {
+	margin-top: 20px;
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+.aside-brands-item {
+	li {
+		display: block;
+		float: left;
+		width: calc((100% - 7px) / 2);
+		margin-right: 7px;
+		margin-top: 7px;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		a {
+			display: block;
+			text-align: center;
+			border: $border;
+			padding: 7px 0;
+			font-size: 14px;
+			line-height: 1;
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
+
+.aside-city {
+	margin-top: 20px;
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+}
+
+.aside-city-list {
+	a {
+		color: $text-grey;
+		font-size: 14px;
+		margin-top: 3px;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+#catalog-2 {
+	background-color: $section-grey;
+}
+
+.catalog-2-search {
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+}
+
+.catalog-2-search-list {
+	li a {
+		color: $text-grey;
+		font-size: 14px;
+		margin-top: 3px;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.catalog-2-text {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: $border;
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 14px;
+		text-align: justify;
+		color: $text-grey;
+	}
+}
