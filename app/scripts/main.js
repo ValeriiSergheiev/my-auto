@@ -324,6 +324,7 @@ if (touch) { // remove all :hover stylesheets
 	//Min window height
 	var minWindowHeight = $(window).height() - $('header').height() - $('footer').height() - 30;
 	$('.min-section-height').css('height', minWindowHeight);
+	$('.min-section-height-2').css('min-height', minWindowHeight);
 	
 
 });

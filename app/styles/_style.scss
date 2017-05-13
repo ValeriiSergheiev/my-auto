@@ -1987,6 +1987,9 @@ p.not-published {
 
 #my-razborka-form {
 	@extend #my-sto-form;
+	input[type="submit"] {
+		width: 260px;
+	}
 }
 
 /* *** Поиск СТО *** */
@@ -3444,13 +3447,18 @@ a.sto-search-main-btn {
 	}
 }
 
-/* *** Страница ПРОВЕРИТЬ ПРОДАВЦА *** */
+/* *** Страница ПРОВЕРИТЬ ПРОДАВЦА + ЛОГИН *** */
 #verify {
 	padding: 0;
 	background-image: url('../images/verify-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left center;
+}
+
+#verify-login {
+	@extend #verify;
+	background-image: url('../images/login-bg.jpg');
 }
 
 .verify-form-wrapper {
@@ -3468,6 +3476,12 @@ a.sto-search-main-btn {
 	h6 {
 		font-size: 25px;
 	}
+	h5 {
+		font-size: 24px;
+		font-weight: bold;
+		width: 290px;
+		margin-top: 40px;
+	}
 	input {
 		display: block;
 		margin: auto;
@@ -3479,6 +3493,7 @@ a.sto-search-main-btn {
 		padding: 0 10px;
 		font-size: 18px;
 		color: $text-grey-light;
+		background-color: $section-grey;
 		&[type="submit"] {
 			color: #fff;
 			background-color: $yellow;
@@ -3487,6 +3502,27 @@ a.sto-search-main-btn {
 			&:hover {
 				@include buttons-hover ($green, 50px);
 			}
+		}
+	}
+}
+
+.reg-pass {
+	width: 100%;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	a {
+		display: block;
+		font-size: 16px;
+		&:first-child {
+			float: left;
+			color: $green;
+		}
+		&:last-child {
+			float: right;
+			color: $text-grey-light;
+		}
+		&:hover {
+			opacity: .7;
 		}
 	}
 }
