@@ -231,6 +231,15 @@ if (touch) { // remove all :hover stylesheets
 		mainClass: 'mfp-fade'
 	});
 
+	$('.icon-mail').magnificPopup({
+		items: {
+			src: '#sms-popup',
+			type: 'inline'
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
 	//Gallery Slider
 	$('.photo-full').slick({
 		slidesToShow: 1,

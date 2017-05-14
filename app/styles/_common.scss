@@ -286,8 +286,17 @@ select, button, input {
 .icon-tel-grey {
 	@include sprite($tel-grey);
 }
+.icon-tel-green {
+	@include sprite($tel-green);
+}
 .icon-mail-grey {
 	@include sprite($mail-grey);
+}
+.icon-mail-green {
+	@include sprite($mail-green);
+}
+.icon-date-green {
+	@include sprite($date-green);
 }
 .icon-www-grey {
 	@include sprite($www-grey);

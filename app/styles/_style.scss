@@ -1992,6 +1992,59 @@ p.not-published {
 	}
 }
 
+.text-popup {
+	@extend .agreement-popup;
+}
+
+.sms-popup {
+	@extend .agreement-popup;
+	article {
+		border: $border;
+		background-color: #f8f8f8;
+		padding: 20px;
+		margin-bottom: 10px;
+		&:nth-child(2n) {
+			background-color: #fff;
+		}
+		h6 {
+			font-size: 15px;
+			font-weight: bold;
+			span {
+				margin-right: 20px;
+				display: inline-block;
+				&:last-child {
+					margin-right: 0;
+				}
+				i {
+					margin-right: 5px;
+					vertical-align: middle;
+				}
+			}
+		}
+		p {
+			text-indent: 0;
+		}
+	}
+}
+
+.icon-mail {
+	cursor: pointer;
+	&:hover {
+		opacity: .7;
+	}
+}
+
+.recovery-popup {
+	@extend .sto-search-popup;
+	.popup-form-container {
+		width: 250px;
+		label {
+			float: none;
+			width: 250px;
+		}
+	}
+}
+
 /* *** Поиск СТО *** */
 #sto-search {
 	.page-title {
@@ -3383,6 +3436,31 @@ a.sto-search-main-btn {
 				@include buttons-hover ($yellow, 45px);
 			}
 		}
+	}
+}
+
+label[for="registration-form-check-3"] a:hover {
+	cursor: help;
+}
+
+.agreement-popup, .confidentiality-popup {
+	h4 {
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
+
+.popup-text-block {
+	height: 350px;
+	overflow-y: auto;
+	p {
+		font-size: 15px;
+		text-align: justify;
+		letter-spacing: .02em;
+		text-indent: 30px;
+		margin-top: 10px;
 	}
 }
 
