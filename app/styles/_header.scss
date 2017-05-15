@@ -37,6 +37,7 @@
 }
 
 .header-top-info-line-2 {
+	position: relative;
 	margin: 8px 0;
 	@include clearfix;
 	a:last-child {
@@ -75,9 +76,18 @@
 	}
 }
 
+.sell-car-btn {
+	position: absolute;
+	top: 1px;
+	left: -100px;
+}
+
 .user-login {
 	font-size: 15px;
 	line-height: 35px;
+	margin-left: 90px;
+	width: 120px;
+	@include text-nowrap ();
 	span:first-child {
 		font-size: 10px;
 	}

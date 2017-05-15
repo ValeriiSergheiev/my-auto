@@ -190,6 +190,7 @@
 }
 
 
+
 }
 
     /* Medium Devices, Desktops */
@@ -647,6 +648,23 @@
         padding-bottom: 30px;
     }
 
+    .verify-form-wrapper {
+        & > div {
+            margin-right: 0;
+        }
+    }
+
+    .user-login {
+        margin-left: 0;
+        span.fa-stack {
+            display: none;
+        }
+    }
+
+    .sell-car-btn {
+        position: static;
+    }
+
 
 }
 
@@ -972,6 +990,20 @@
             a {
                 width: calc(100% / 2);
             }
+        }
+
+        .header-top-info-login {
+            width: 80%;
+        }
+
+        .header-top-info-line-2 {
+            a i.icon-exit {
+                display: none;
+            }
+        }
+
+        .header-top-info-login {
+            width: 100%;
         }
 
 

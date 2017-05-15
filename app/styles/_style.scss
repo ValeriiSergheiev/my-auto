@@ -3540,9 +3540,10 @@ label[for="registration-form-check-3"] a:hover {
 }
 
 .verify-form-wrapper {
-	div {
+	& > div {
 		float: right;
 		max-width: 750px;
+		margin-right: 120px;
 	}
 }
 
