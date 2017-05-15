@@ -665,6 +665,20 @@
         position: static;
     }
 
+    .header-top-info-line-2 a:last-child {
+        float: right;
+    }
+
+    .btn-404 {
+        width: auto;
+        a {
+            float: none;
+            margin-left: auto;
+            margin-right: auto !important;
+            margin-top: 5px;
+        }
+    }
+
 
 }
 
@@ -1003,7 +1017,19 @@
         }
 
         .header-top-info-login {
-            width: 100%;
+            width: 85%;
+        }
+
+        .header-top-info-line-1-login {
+            //display: none;
+        }
+
+        .exit-login {
+            margin-left: 0 !important;
+        }
+
+        .user-login {
+            width: 100px;
         }
 
 
